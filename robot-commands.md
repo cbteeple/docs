@@ -74,7 +74,7 @@
 
 ## Edit the joint limits given to the MoveIt! planner:
 from the catkin workspace:
-	subl src/universal_robot/ur5_e_moveit_config/config/joint_limits.yaml
+	`subl src/universal_robot/ur5_e_moveit_config/config/joint_limits.yaml`
 
 
 
