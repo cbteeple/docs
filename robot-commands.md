@@ -93,7 +93,7 @@ from the catkin workspace:
 ### Building the catkin workspace
 1. Build the workspace: `catkin_make_isolated`
 
-Add the source to the ~.bashrc file: `source devel_isolated/setup.sh`
+2. Add the source to the $$ \sim $$.bashrc file: `source devel_isolated/setup.sh`
 
 ### Run the apriltag detection algorithm
 `roslaunch usb_cam usb_cam-test.launch`
