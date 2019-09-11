@@ -6,35 +6,33 @@
 
 
 ### Move to zero and home positions:
-`rosrun hand_arm move_home.py 0`
-`rosrun hand_arm move_home.py 1`
+- `rosrun hand_arm move_home.py 0`
+- `rosrun hand_arm move_home.py 1`
 
 
 ### Freemove/teach the robot
-#### Just freemove
-`rosrun hand_arm teach.py`
+- Just freemove: `rosrun hand_arm teach.py`
 
+- Teach: `rosrun hand_arm teach_points.py pick_place_test`
 
-#### Teach
-`rosrun hand_arm teach_points.py pick_place_test`
-
-
-#### Replay
-`rosrun hand_arm replay.py pick_place_test`
+- Replay: `rosrun hand_arm replay.py pick_place_test`
 
 
 
 ### Pick and Place Action
-#### Joint Space
-`roslaunch hand_arm pick-place-run.launch traj_profile:=pick_front speed_factor:=2.0 num_reps:=20`
+- Joint Space
+	- `roslaunch hand_arm pick-place-run.launch traj_profile:=pick_front speed_factor:=2.0 num_reps:=20`
 
-#### Cartesian
-`roslaunch hand_arm pick-place-run.launch traj_profile:=pick_front_xyz speed_factor:=2.0 num_reps:=20`
-`roslaunch hand_arm pick-place-run.launch traj_profile:=pick_place/pick_place_2finger speed_factor:=2.0 num_reps:=20`
+- Cartesian
+	- `roslaunch hand_arm pick-place-run.launch traj_profile:=pick_front_xyz speed_factor:=2.0 num_reps:=20`
+	- `roslaunch hand_arm pick-place-run.launch traj_profile:=pick_place/pick_place_2finger speed_factor:=2.0 num_reps:=20`
 
 
-#### Build Pick and Place
-`roslaunch hand_arm pick-place-build.launch traj_profile:=pick_place/pick_place_2finger`
+- Build Pick and Place
+	- `roslaunch hand_arm pick-place-build.launch traj_profile:=pick_place/pick_place_2finger`
+
+- Plan Pick and Place
+	- `roslaunch hand_arm pick-place-plan.launch traj:=pick_place/pick_place_2finger`
 
 
 ## Simulated Robot
@@ -42,9 +40,10 @@
 `roslaunch ur_e_gazebo ur5e.launch`
 
 ### MoveIt!
-`roslaunch ur5_e_moveit_config ur5_e_moveit_planning_execution.launch sim:=true`
-
-`roslaunch ur5_e_moveit_config moveit_rviz.launch config:=true`
+```
+roslaunch ur5_e_moveit_config ur5_e_moveit_planning_execution.launch sim:=true
+roslaunch ur5_e_moveit_config moveit_rviz.launch config:=true
+```
 
 
 ## Planning
@@ -54,15 +53,17 @@
 
 # Hand:
 ## Bring up the hand controller
-`roslaunch hand_arm hand_bringup.launch profile:=planar2seg`
-`roslaunch hand_arm hand_bringup.launch profile:=anthro7`
+- `roslaunch hand_arm hand_bringup.launch profile:=planar2seg`
+- `roslaunch hand_arm hand_bringup.launch profile:=anthro7`
 
 
 
 # MoveIt!
 ## Start up the MoveIt! Server and RViz (real robot)
-`roslaunch ur5_e_moveit_config ur5_e_moveit_planning_execution.launch limited:=false`
-`roslaunch ur5_e_moveit_config moveit_rviz.launch config:=true`
+```
+roslaunch ur5_e_moveit_config ur5_e_moveit_planning_execution.launch limited:=false
+roslaunch ur5_e_moveit_config moveit_rviz.launch config:=true
+```
 
 
 ## Testing in a simulated robot:
