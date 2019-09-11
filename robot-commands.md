@@ -24,8 +24,9 @@
 	- `roslaunch hand_arm pick-place-run.launch traj_profile:=pick_front speed_factor:=2.0 num_reps:=20`
 
 - Cartesian
-	- `roslaunch hand_arm pick-place-run.launch traj_profile:=pick_front_xyz speed_factor:=2.0 num_reps:=20`
-	- `roslaunch hand_arm pick-place-run.launch traj_profile:=pick_place/pick_place_2finger speed_factor:=2.0 num_reps:=20`
+	- `roslaunch hand_arm pick-place-run.launch traj_profile:=pick_front_xyz num_reps:=20`
+	- `roslaunch hand_arm pick-place-run.launch traj_profile:=pick_place/pick_place_2finger num_reps:=20`
+	- `roslaunch hand_arm pick-place-run.launch traj_profile:=pick_place/pick_place_4finger reps:=10`
 
 
 - Build Pick and Place
