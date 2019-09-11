@@ -55,12 +55,13 @@
 # Hand:
 ## Bring up the hand controller
 `roslaunch hand_arm hand_bringup.launch profile:=planar2seg`
+`roslaunch hand_arm hand_bringup.launch profile:=anthro7`
 
 
 
 # MoveIt!
 ## Start up the MoveIt! Server and RViz (real robot)
-`roslaunch ur5_e_moveit_config ur5_e_moveit_planning_execution.launch limited:=true`
+`roslaunch ur5_e_moveit_config ur5_e_moveit_planning_execution.launch limited:=false`
 `roslaunch ur5_e_moveit_config moveit_rviz.launch config:=true`
 
 
