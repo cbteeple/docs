@@ -60,7 +60,7 @@ roslaunch ur5_e_moveit_config moveit_rviz.launch config:=true
 
 # MoveIt!
 ## Start up the MoveIt! Server and RViz (real robot)
-```
+```console
 roslaunch ur5_e_moveit_config ur5_e_moveit_planning_execution.launch limited:=false
 roslaunch ur5_e_moveit_config moveit_rviz.launch config:=true
 ```
