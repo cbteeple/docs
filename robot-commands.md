@@ -26,15 +26,15 @@
 
 ### Pick and Place Action
 #### Joint Space
-`roslaunch hand_arm pick-and-place.launch traj_profile:=pick_front speed_factor:=2.0 num_reps:=20`
+`roslaunch hand_arm pick-place-run.launch traj_profile:=pick_front speed_factor:=2.0 num_reps:=20`
 
 #### Cartesian
-`roslaunch hand_arm pick-and-place.launch traj_profile:=pick_front_xyz speed_factor:=2.0 num_reps:=20`
-`roslaunch hand_arm pick-and-place.launch traj_profile:=pick_place/pick_place_2finger speed_factor:=2.0 num_reps:=20`
+`roslaunch hand_arm pick-place-run.launch traj_profile:=pick_front_xyz speed_factor:=2.0 num_reps:=20`
+`roslaunch hand_arm pick-place-run.launch traj_profile:=pick_place/pick_place_2finger speed_factor:=2.0 num_reps:=20`
 
 
 #### Build Pick and Place
-`roslaunch hand_arm pick-and-place-build.launch traj_profile:=pick_place/pick_place_2finger`
+`roslaunch hand_arm pick-place-build.launch traj_profile:=pick_place/pick_place_2finger`
 
 
 ## Simulated Robot
