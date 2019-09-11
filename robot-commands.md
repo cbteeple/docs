@@ -28,14 +28,17 @@
 	- `roslaunch hand_arm pick-place-run.launch traj_profile:=pick_place/pick_place_2finger num_reps:=20`
 	- `roslaunch hand_arm pick-place-run.launch traj_profile:=pick_place/pick_place_4finger reps:=10`
 
-	- `roslaunch hand_arm pick-place-run-multi.launch traj:=pick_place/pick_place_4finger_grid reps:=4`
-
 
 - Build Pick and Place
 	- `roslaunch hand_arm pick-place-build.launch traj_profile:=pick_place/pick_place_2finger`
 
 - Plan Pick and Place
 	- `roslaunch hand_arm pick-place-plan.launch traj:=pick_place/pick_place_2finger`
+
+- Multiple Trajectories
+	- `roslaunch hand_arm pick-place-build-multi.launch traj:=pick_place/pick_place_4finger_grid`
+	- `roslaunch hand_arm pick-place-plan-multi.launch traj:=pick_place/pick_place_4finger_grid`
+	- `roslaunch hand_arm pick-place-run-multi.launch traj:=pick_place/pick_place_4finger_grid reps:=4`
 
 
 ## Simulated Robot
