@@ -106,3 +106,6 @@ from the catkin workspace:
 ### Run the apriltag detection algorithm
 `roslaunch usb_cam usb_cam-test.launch`
 `roslaunch apriltag_ros continuous_detection.launch`
+
+## Regord Rosbags
+[rosbag_recorder](https://github.com/chili-epfl/rosbag-recorder) package
