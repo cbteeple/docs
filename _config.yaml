@@ -41,7 +41,7 @@ footer_content: "&copy; 2019 by Clark Teeple"
 
 # Build settings
 markdown: kramdown
-remote_theme: pmarsceill/just-the-docs #cbteeple/pressure_controller_docs
+remote_theme: cbteeple/pressure_controller_docs #pmarsceill/just-the-docs
 # theme: "just-the-docs"
 plugins:
   - jekyll-feed
