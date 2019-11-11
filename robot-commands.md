@@ -45,6 +45,9 @@
 ### Gazebo
 `roslaunch ur_e_gazebo ur5e.launch`
 
+### Look at RViz pose
+`rostopic echo rviz_moveit_motion_planning_display/robot_interaction_interactive_marker_topic/feedback`
+
 ### MoveIt!
 ```
 roslaunch ur5_e_moveit_config ur5_e_moveit_planning_execution.launch sim:=true
