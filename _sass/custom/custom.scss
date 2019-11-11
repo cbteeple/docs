@@ -1,0 +1,97 @@
+
+$cbt-blue: #32B0FF;
+$cbt-green: #00b050;
+$cbt-orange: #e65c00;
+
+
+
+
+$base-color: $cbt-orange;
+
+$nav-child-link-color: $grey-dk-100;
+$btn-primary-color: $base-color;
+//$base-button-color: #f7f7f7;
+$link-color: $base-color;
+//$body-heading-color: $base-color;
+
+$body-font-family: "Lato", -apple-system, BlinkMacSystemFont, "helvetica neue", helvetica, roboto, noto, "segoe ui", arial, sans-serif;
+
+$root-font-size: 16px;
+$body-line-height: 1.4;
+$content-line-height: 1.25;
+//$body-heading-line-height: 1.15;
+
+
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,900);
+
+
+// Site Stuff
+
+.site-logo{
+	width: 60px !important;
+    height: 100% !important;
+}
+
+.main-content-wrap, html{
+	scroll-behavior: smooth;
+}
+
+
+.site-title {
+    font-weight: bold;
+}
+
+.main-content h1, .main-content h2, .main-content h3, .main-content h4{font-weight: bolder;}
+
+
+
+
+
+//Nav Bar Stuff
+
+.navigation-list-link.active{
+	background-color: $base-color;
+	color: #FFF !important;
+}
+
+.navigation-list-link.active:hover{
+	background-color: $base-color;
+	color: #FFF !important;
+}
+
+.navigation-list-link:hover{
+	background-color: $grey-lt-200;
+}
+
+.navigation-list-link{
+	padding-left: 0.7em;
+	border-radius: 1.0em;
+	//border-top-right-radius: 0px;
+	//border-bottom-right-radius: 0px;
+}
+
+.navigation-list-child-list .navigation-list-link{
+	padding-left: 1.4em;
+}
+
+.navigation-list-item::before{
+	padding-left: 1.4em;
+}
+
+
+.navigation-list-item.active::before{
+	color: #FFF !important;
+}
+
+
+//FontAwesome Stuff
+.svg-inline--fa{
+	margin-right: 10px;
+	width:1.0em;
+}
+
+.nav-icons{
+	display: inline-block;
+	width:30px;
+}
+
