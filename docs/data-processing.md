@@ -2,7 +2,7 @@
 layout: default
 title: Data Processing
 permalink: /data-processing
-nav_order: 3
+nav_order: 2
 font_awesome: "fas fa-chart-bar"
 ---
 
