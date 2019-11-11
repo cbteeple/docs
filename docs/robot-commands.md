@@ -1,3 +1,16 @@
+
+---
+layout: default
+title: Robot Commands
+permalink: /robot-commands
+nav_order: 1
+font_awesome: "fas fa-robot"
+---
+
+# <i class="{{ page.font_awesome }}"></i> {{ page.title }}
+
+
+
 # Robot:
 
 ## Real Robot

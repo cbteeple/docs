@@ -1,0 +1,75 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: Clark's Docs
+owner: Clark Teeple
+email: cbteeple@g.harvard.edu
+
+description: >- # this means to ignore newlines until "baseurl:"
+  Documenting useful stuff.
+# baseurl: "/document-everything/" # the subpath of your site, e.g. /blog
+url: "https://cbteeple.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: cbteeple
+github_username:  cbteeple
+
+# Heading anchor links appear on hover over h1-h6 tags in page content
+# allowing users to deep link to a particular heading on a page.
+#
+# Supports true (default) or false/nil
+heading_anchors: true
+
+# Footer content appears at the bottom of every page's main content
+footer_content: "&copy; 2019 by Clark Teeple"
+#logo: "/assets/img/soft_hand.svg"
+
+# Google Analytics Tracking (optional)
+# e.g, UA-1234567-89
+#ga_tracking: UA-54476418-2
+
+
+# Build settings
+markdown: kramdown
+remote_theme: cbteeple/docs
+# theme: "just-the-docs"
+plugins:
+  - jekyll-feed
+
+kramdown:
+  toc_levels: "2"
+  parse_block_html: true
+
+# Configuration for just-the-docs
+
+# Enable or disable the site search
+search_enabled: true
+use_font_awesome: true
+# Aux links for the upper right navigation
+aux_links:
+    'View on Github <i style="font-size:2.0em;" class="fab fa-github"></i>':
+      - "//github.com/cbteeple/pressure_controller"
+# Color scheme currently only supports "dark" or nil (default)
+# color_scheme: "dark"
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
