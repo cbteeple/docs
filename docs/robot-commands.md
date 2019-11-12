@@ -12,6 +12,9 @@ font_awesome: "fas fa-robot"
 
 # Robot:
 
+[Hand+Arm Package Documentation](https://cbteeple.github.io/hand_arm_cbt_docs/){: .btn}
+[Pressure Controller Documentation](https://cbteeple.github.io/pressure_controller_docs/){: .btn}
+
 ## Real Robot
 ### Bring up the robot
 `roslaunch ur_modern_driver ur5e_bringup.launch limited:=true robot_ip:=192.168.1.2`
