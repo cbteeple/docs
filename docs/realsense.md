@@ -38,6 +38,8 @@ These commands are from the [RealSense ROS Documentation](https://github.com/Int
 
 ## Deep Object Pose Estimation
 
+[Based on this paper](https://arxiv.org/abs/1809.10790){: .btn}
+
 Download the base drivers for deep object pose estimation (trained on RGB cameras)
 
 [DOPE Base Drivers](https://github.com/NVlabs/Deep_Object_Pose){: .btn}
