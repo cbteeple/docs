@@ -47,5 +47,11 @@ Someone has tried this to include the depth data too: [DOPE RealSense Drivers](h
 Also: There are several dependencies I had to manually install since I'm using ROS Melodic (both of these packages are built for Kinetic)
 
 ### Actually using the dope package
+1. Edit the `dope/config/config_pose.yaml`
 
-`roslaunch dope dope.launch`
+```yaml	
+topic_camera: "/camera/color/image_raw"
+topic_camera_info: "/camera/color/camera_info"
+```
+
+2. `roslaunch dope dope.launch`
