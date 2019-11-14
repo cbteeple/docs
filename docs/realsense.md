@@ -10,11 +10,10 @@ font_awesome: "fas fa-video"
 
 
 ## Install all the drivers
-[librealsense](https://github.com/IntelRealSense/librealsense/){: .btn}
+[librealsense](https://github.com/IntelRealSense/librealsense/){: .btn .btn-primary}
+[Install on Linux](https://github.com/IntelRealSense/librealsense/blob/master/doc/distribution_linux.md) {: .btn}
 
-- [Install on Linux](https://github.com/IntelRealSense/librealsense/blob/master/doc/distribution_linux.md)
-
-[RealSense ROS Drivers](https://github.com/IntelRealSense/realsense-ros){: .btn}
+[RealSense ROS Drivers](https://github.com/IntelRealSense/realsense-ros){: .btn .btn-primary}
 
 
 ## View realsense camera + take basic snapshots
@@ -38,11 +37,10 @@ These commands are from the [RealSense ROS Documentation](https://github.com/Int
 
 ## Deep Object Pose Estimation
 
-[Based on this paper](https://arxiv.org/abs/1809.10790){: .btn}
-
 Download the base drivers for deep object pose estimation (trained on RGB cameras)
 
-[DOPE Base Drivers](https://github.com/NVlabs/Deep_Object_Pose){: .btn}
+[DOPE Base Drivers](https://github.com/NVlabs/Deep_Object_Pose){: .btn .btn-primary}
+[Based on this paper](https://arxiv.org/abs/1809.10790){: .btn}
 
 Someone has tried this to include the depth data too: [DOPE RealSense Drivers](https://github.com/yehengchen/DOPE-ROS-D435)
 
