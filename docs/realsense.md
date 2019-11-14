@@ -11,7 +11,7 @@ font_awesome: "fas fa-video"
 
 ## Install all the drivers
 [librealsense](https://github.com/IntelRealSense/librealsense/){: .btn .btn-primary}
-[Install on Linux](https://github.com/IntelRealSense/librealsense/blob/master/doc/distribution_linux.md) {: .btn}
+[Install on Linux](https://github.com/IntelRealSense/librealsense/blob/master/doc/distribution_linux.md){: .btn}
 
 [RealSense ROS Drivers](https://github.com/IntelRealSense/realsense-ros){: .btn .btn-primary}
 
