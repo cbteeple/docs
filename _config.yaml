@@ -41,7 +41,7 @@ logo: "/assets/img/soft_hand.svg"
 
 # Build settings
 markdown: kramdown
-remote_theme: pmarsceill/just-the-docs
+remote_theme: cbteeple/just-the-docs
 # theme: "just-the-docs"
 plugins:
   - jekyll-feed
