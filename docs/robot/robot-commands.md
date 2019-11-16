@@ -8,7 +8,13 @@ font_awesome: "fas fa-terminal"
 ---
 
 # <i class="{{ page.font_awesome }}"></i> {{ page.title }}
+{: .no_toc }
 
+
+# TOC
+{: .toc}
+
+---
 
 
 # Robot:
