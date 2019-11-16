@@ -21,4 +21,4 @@ font_awesome: "fas fa-terminal"
 	- `PS1='\[\033[0;32m\]\[\033[0m\033[1;32m\]\u@\h: \[\e[34;1m\]\w\[\033[1;31m\]$(__git_ps1)\n\[\033[0m\033[1;0m\]\$\[\033[0m\] '`
 
 
-![Nice-colored terminal]({{ "/assets/img/terminal-colors.png" }})
+![Nice-colored terminal]({{ "/assets/img/terminal-colors.png" | absolute_url }})
