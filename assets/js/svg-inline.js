@@ -57,7 +57,7 @@ function removeStyles(el) {
 
 
 
-*  Replace all SVG images with inline SVG *
+/*  Replace all SVG images with inline SVG */
 $(\'img.svg\').each(function(){
     var $img = $(this);
     var imgID = $img.attr(\'id\');
