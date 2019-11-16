@@ -60,7 +60,7 @@ aux_links:
     'View on Github <i style="font-size:2.0em;" class="fab fa-github"></i>':
       - "//github.com/cbteeple/docs"
 # Color scheme currently only supports "dark" or nil (default)
-color_scheme: "dark"
+color_scheme: nil
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
