@@ -132,5 +132,10 @@ from the catkin workspace:
 `roslaunch usb_cam usb_cam-test.launch`
 `roslaunch apriltag_ros continuous_detection.launch`
 
-### Regord Rosbags
-[rosbag_recorder](https://github.com/chili-epfl/rosbag-recorder) package
+### Record Rosbags
+My fork of the [rosbag_recorder](https://github.com/cbteeple/rosbag-recorder) package
+- Start the service using launch file
+	- `roslaunch rosbag_recorder rosbag_recorder.launch`
+- Pickle each bag after it's saved
+	- `roslaunch rosbag_recorder rosbag_recorder.launch pickle:=true`
+	- _(Note, this could take a long time if you're saving super large amounts of data)_
