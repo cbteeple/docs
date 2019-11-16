@@ -18,7 +18,7 @@ By [Clark Teeple](http://www.cbteeple.com)
 {{ site.description }}
 
 
-<img src="{{ "/assets/img/undraw_typewriter.svg | absolute_url" }} " ></img>
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/undraw_typewriter.svg | absolute_url" ></img>
 
 
 
