@@ -1,11 +1,3 @@
-$(document).ready(readyFn);
-
-
-function readyFn(jQuery) {
-
-}
-
-
 // Replace SVG images with inline
     jQuery('img').filter(function () {
         return this.src.match(/.*\.svg$/);
