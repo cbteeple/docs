@@ -45,6 +45,11 @@ remote_theme: cbteeple/just-the-docs
 # theme: "just-the-docs"
 plugins:
   - jekyll-feed
+  - jekyll-inline-svg
+
+#gems:
+#  - jekyll-inline-svg
+  
 
 kramdown:
   toc_levels: "2"
