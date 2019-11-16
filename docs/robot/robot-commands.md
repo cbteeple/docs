@@ -12,7 +12,7 @@ font_awesome: "fas fa-terminal"
 
 
 # TOC
-{: .toc}
+{:toc}
 
 ---
 
