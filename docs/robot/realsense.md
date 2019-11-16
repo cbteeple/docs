@@ -1,8 +1,9 @@
 ---
 layout: default
 title: Intel RealSense
-permalink: /realsense
-nav_order: 3
+permalink: /robot/realsense
+parent: Robot
+nav_order: 2
 font_awesome: "fas fa-video"
 ---
 

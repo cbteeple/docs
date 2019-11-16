@@ -1,9 +1,10 @@
 ---
 layout: default
 title: Robot Commands
-permalink: /robot-commands
+permalink: /robot/robot-commands
+parent: Robot
 nav_order: 1
-font_awesome: "fas fa-robot"
+font_awesome: "fas fa-terminal"
 ---
 
 # <i class="{{ page.font_awesome }}"></i> {{ page.title }}
