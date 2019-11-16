@@ -22,4 +22,4 @@ It turns out you can edit the css file that determines what the login page looks
 
 
 ## Download the theme
-[Typical Screens]({{ "assets/files/ubuntu.css" | absolute_url }}){: .btn .btn-primary}
+[ubuntu.css]({{ "assets/files/ubuntu.css" | absolute_url }}){: .btn .btn-primary}
