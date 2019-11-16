@@ -21,7 +21,5 @@ Here I present a variation on the [Poly Dark](https://github.com/shvchk/poly-dar
 
 ## Download the theme
 
-{{ "assets/files/poly-dark-clark-normal.tar.gz" | absolute_url }}
-
 [Typical Screens]( {{ "assets/files/poly-dark-clark-normal.tar.gz" | absolute_url }} ){: .btn .btn-primary}
 [High-Res Screens]( {{ "assets/files/poly-dark-clark-hires.tar.gz" | absolute_url }} ){: .btn .btn-primary}
