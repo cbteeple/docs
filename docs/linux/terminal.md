@@ -22,5 +22,3 @@ font_awesome: "fas fa-terminal"
 
 
 ![Nice-colored terminal]({{ "/assets/img/terminal-colors.png" }})
-
-![Art that's probably not 3D printed]({{ "/assets/img/undraw_art_museum_8or4.svg" }})
