@@ -15,10 +15,11 @@ It turns out you can edit the css file that determines what the login page looks
 **This is tested in Ubuntu 18.04**
 
 1. Download my custom theme
-2. To edit the real style sheet, open a terminal and use `sudo subl /usr/share/gnome-shell/theme/ubuntu.css`
+2. To edit the real style sheet, open the original `ubuntu.css` file
+	- `sudo subl /usr/share/gnome-shell/theme/ubuntu.css`
 3. Copy the text form my custom theme into the real stylesheet
 4. Restart to apply changes.
 
 
 ## Download the theme
-[Typical Screens](files/ubuntu.css){: .btn .btn-primary}
+[Typical Screens]({{ "assets/files/ubuntu.css" | absolute_url }}){: .btn .btn-primary}

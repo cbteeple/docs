@@ -2,7 +2,7 @@
 layout: default
 title: Intel RealSense
 permalink: /robot/realsense
-parent: Robot
+parent: Robot Systems
 nav_order: 2
 font_awesome: "fas fa-video"
 ---

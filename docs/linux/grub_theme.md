@@ -20,5 +20,8 @@ Here I present a variation on the [Poly Dark](https://github.com/shvchk/poly-dar
 - Larger icons and text overall (better use of screen real estate)
 
 ## Download the theme
-[Typical Screens](files/poly-dark-clark-normal.tar.gz){: .btn .btn-primary}
-[High-Res Screens](files/poly-dark-clark-hires.tar.gz){: .btn .btn-primary}
+
+{{ "assets/files/poly-dark-clark-normal.tar.gz" | absolute_url }}
+
+[Typical Screens]( {{ "assets/files/poly-dark-clark-normal.tar.gz" | absolute_url }} ){: .btn .btn-primary}
+[High-Res Screens]( {{ "assets/files/poly-dark-clark-hires.tar.gz" | absolute_url }} ){: .btn .btn-primary}

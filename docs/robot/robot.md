@@ -4,7 +4,7 @@ title: Robot Systems
 has_children: true
 permalink: robot
 nav_order: 2
-font_awesome: "fab fa-robot"
+font_awesome: "fas fa-robot"
 ---
 
 

@@ -2,7 +2,7 @@
 layout: default
 title: Robot Commands
 permalink: /robot/robot-commands
-parent: Robot
+parent: Robot Systems
 nav_order: 1
 font_awesome: "fas fa-terminal"
 ---
