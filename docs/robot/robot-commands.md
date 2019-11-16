@@ -17,7 +17,7 @@ font_awesome: "fas fa-terminal"
 ---
 
 
-## Robot:
+## Robot
 
 [Hand+Arm Package Documentation](https://cbteeple.github.io/hand_arm_cbt_docs/){: .btn .btn-primary}
 [Pressure Controller Documentation](https://cbteeple.github.io/pressure_controller_docs/){: .btn}
@@ -82,7 +82,7 @@ roslaunch ur5_e_moveit_config moveit_rviz.launch config:=true
 
 
 
-## Hand:
+## Hand
 ### Bring up the hand controller
 - `roslaunch hand_arm hand_bringup.launch profile:=planar2seg`
 - `roslaunch hand_arm hand_bringup.launch profile:=anthro7`
