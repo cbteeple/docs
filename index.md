@@ -24,5 +24,5 @@ By [Clark Teeple](http://www.cbteeple.com)
 
 This work was done as part of a research project at the [Harvard Microrobotics Lab](https://www.micro.seas.harvard.edu). Our goal was to build a system capable of smooth control of pressure to drive our custom soft robotic hands.
 
-<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-<script type="text/javascript" src="{{ "/assets/js/svg-inline.js" | absolute_url }}"></script>
+
+
