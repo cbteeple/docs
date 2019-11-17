@@ -11,5 +11,12 @@ font_awesome: "fas fa-chart-bar"
 
 Some useful tools for data processing in python
 
-## Converting ROSBAG files to a Pandas Dataframe
+## Convert rosbag files to a Pandas Dataframe
 [rosbag_pandas](https://github.com/aktaylor08/RosbagPandas) library from aktaylor08
+
+## Plot pickled rosbag data
+
+[rosbag-pickle-graph](https://github.com/cbteeple/rosbag-pickle-graph){: .btn .btn-primary}
+
+`python graph_robot.py ft/up200_11162019_210947`
+
