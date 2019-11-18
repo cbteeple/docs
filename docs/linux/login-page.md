@@ -22,4 +22,4 @@ It turns out you can edit the css file that determines what the login page looks
 
 
 ## Download the theme
-[ubuntu.css]({{ "assets/files/ubuntu.css" | absolute_url }}){: .btn .btn-primary}
+[<i class="fas fa-file-alt"></i> ubuntu.css]({{ "assets/files/ubuntu.css" | absolute_url }}){: .btn .btn-primary}
