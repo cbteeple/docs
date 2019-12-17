@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Upgrades
+title: CR10s Upgrades
 permalink: /3d_printing/upgrades
 parent: 3D Printing
 nav_order: 1
