@@ -46,7 +46,9 @@ After all of that nonsense getting Marlin to work, I figured I deserved a custom
 3. Replace the `_bootscreen.h` file with this new one.
 4. Hack the Marlin Firmware to only show this new boot screen
     - By Default, Marlin will only has options to show Marlin's default boot screen, show a custom screen in addition to the marlin screen, or show no boot screen.
-    - I obviously want to keep the boot sequence short
+    - I obviously want to keep the boot sequence short, so I added another flag to the boot screen library that you can add in the _configuration.h_ that disables the marlin boot screen.
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/teeprint.jpg" />
 
 
 
