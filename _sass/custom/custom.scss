@@ -56,3 +56,15 @@ $btn-primary-color: $base-color;
 //);
 
 
+.gallery-4to3-tall{
+	@include mq(sm){
+	    width:36.15%;
+	 }  
+}
+
+.gallery-4to3-wide{
+	@include mq(sm){
+	    width:63.25%;
+	 } 
+
+}

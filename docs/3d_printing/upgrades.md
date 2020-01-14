@@ -19,6 +19,15 @@ font_awesome: "fas fa-terminal"
 
 ---
 
+## Base Model - CR-10s
+
+<img alt="Bottom view of the PCB"
+     src="{{ "assets/img/printer_wide.jpg" | absolute_url }}"
+     class="gallery gallery-4to3-tall" />
+<img alt="Bottom view of the PCB"
+     src="{{ "assets/img/printer_zoom.jpg" | absolute_url }}"
+     class="gallery gallery-4to3-wide" />
+
 
 ## Motor Drivers + Main Board
 I was tired of how lout the CR10s is out of the box, so I figured I could quiet it down with some nice Trinamic motor drivers. However, Creality designed thier own board for the CR10s with built-in motor drivers (pretty much the cheapest ones available). Luckily I had an extra RAMPS 1.4 main board with an Arduino Mega 2560 laying around to use.
@@ -48,7 +57,8 @@ After all of that nonsense getting Marlin to work, I figured I deserved a custom
     - By Default, Marlin will only has options to show Marlin's default boot screen, show a custom screen in addition to the marlin screen, or show no boot screen.
     - I obviously want to keep the boot sequence short, so I added another flag to the boot screen library that you can add in the _configuration.h_ that disables the marlin boot screen.
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/teeprint.jpg" />
 
+<img alt="Top view of the PCB"
+     src="{{ "assets/img/teeprint.jpg" | absolute_url }}"/>
 
 
