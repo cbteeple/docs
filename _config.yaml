@@ -51,11 +51,16 @@ kramdown:
   toc_levels: "2"
   parse_block_html: true
 
+
 # Configuration for just-the-docs
+use_font_awesome: true
 
 # Enable or disable the site search
 search_enabled: true
-use_font_awesome: true
+
+# Open external links in a new tab (options are "new-tab" or default )
+external_links: new-tab
+
 # Aux links for the upper right navigation
 aux_links:
     'View on Github <i style="font-size:2.0em;" class="fab fa-github"></i>':
