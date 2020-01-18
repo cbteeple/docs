@@ -19,7 +19,7 @@ font_awesome: "fab fa-github"
 
 It's nice to automate this update step. 
 
-[<i class="fas fa-file-alt"></i> rebuild_children.sh]({{ "assets/files/update_repos.sh" | absolute_url }}){: .btn .btn-primary}
+[<i class="fas fa-file-alt"></i> update_repos.sh]({{ "assets/files/update_repos.sh" | absolute_url }}){: .btn .btn-primary}
 
 ```bash
 # If you send an argument, use it. Otherwise, use the default list of repos
@@ -55,7 +55,7 @@ done
 ## Rebuilding all repos at once without updating
 Sometimes I make updates to my main fork of the "Just The Docs" theme. These changes will only propagate to all of my documentation sites if they get recompiled. This only happens when new commits are pushed, so I wrote a simple bash script to send empty commits.
 
-[<i class="fas fa-file-alt"></i> rebuild_children.sh]({{ "assets/files/rebuild_repos.sh" | absolute_url }}){: .btn .btn-primary}
+[<i class="fas fa-file-alt"></i> rebuild_repos.sh]({{ "assets/files/rebuild_repos.sh" | absolute_url }}){: .btn .btn-primary}
 
 ```bash
 # If you send an argument, use it. Otherwise, use the default list of repos
