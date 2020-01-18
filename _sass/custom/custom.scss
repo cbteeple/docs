@@ -58,13 +58,13 @@ $btn-primary-color: $base-color;
 
 .gallery-4to3-tall{
 	@include mq(sm){
-	    width:36.15%;
+	    width: calc(36.15% - 2*#{$gallery-padding});
 	 }  
 }
 
 .gallery-4to3-wide{
 	@include mq(sm){
-	    width:63.25%;
+	    width: calc(63.25% - 2*#{$gallery-padding});
 	 } 
 
 }
