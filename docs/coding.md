@@ -23,7 +23,7 @@ A good basic setup:
 - Theme: Preferences >> Theme >> **Adaptive**
 - Colors: Preferences >> Color Scheme >> **Monokai**
 
-## Extensions
+### Extensions
 - [Package Control](https://packagecontrol.io/installation) - A nice way to add and remove packages to sublime. You need this for all other visual tweaks
 - [Material Theme](https://github.com/equinusocio/material-theme) - Beautiful theming using material design. Be sure to set the colors back to Monokai afterward
 	- Theme settings:
@@ -38,3 +38,14 @@ A good basic setup:
 "theme": "Material-Theme-Darker.sublime-theme"
 ```
 - [Sync Settings](https://packagecontrol.io/packages/Sync%20Settings) - A nice tool to sync sublime settings using github gists.
+
+## Spyder
+
+### Settings
+- Tools >> Preferences >> **Syntax Coloring >> Monokai**
+- Tools >> Preferences >> iPython Console >> **Graphics >> Backend >> Automatic**
+
+### QDarkStyle
+[QDarkStyle](https://github.com/ColinDuquesnoy/QDarkStyleSheet) dark mode for spyder. Here are the [instructions from someone on StackOverflow](https://github.com/spyder-ide/spyder/issues/2350#issuecomment-436320189)
+
+I tried it by placing the correct line here: `C:\ProgramData\Anaconda2\Lib\site-packages\spyder\app`, but it sort of looks like garbage. For now I'm sticking to the white window with dark Monokai syntax highlighting.
