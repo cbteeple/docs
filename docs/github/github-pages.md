@@ -1,13 +1,14 @@
 ---
 layout: default
 title: GitHub Pages
-permalink: github_pages
-nav_order: 6
-font_awesome: "fab fa-github"
+permalink: github-tips/github-pages
+parent: Github
+nav_order: 2
+font_awesome: "fas fa-address-card"
 ---
 
 
-# <i class="{{ page.font_awesome }}"></i> Useful tidbits for using github pages
+# <i class="{{ page.font_awesome }}"></i> Useful tidbits for using Github Pages
 {: .no_toc }
 
 
