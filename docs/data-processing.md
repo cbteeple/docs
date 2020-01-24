@@ -20,3 +20,6 @@ Some useful tools for data processing in python
 
 `python graph_robot.py ft/up200_11162019_210947`
 
+## Nice-looking plots
+
+for making plots for IEEE conferences, thanks to this [blog post by Bastian Bloessl](https://www.bastibl.net/publication-quality-plots/).

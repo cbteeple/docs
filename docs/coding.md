@@ -40,6 +40,7 @@ A good basic setup:
 - [Sync Settings](https://packagecontrol.io/packages/Sync%20Settings) - A nice tool to sync sublime settings using github gists.
 
 ## Spyder
+Python IDE
 
 ### Settings
 - Tools >> Preferences >> **Syntax Coloring >> Monokai**
