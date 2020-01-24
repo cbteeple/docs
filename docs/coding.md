@@ -50,3 +50,14 @@ Python IDE
 [QDarkStyle](https://github.com/ColinDuquesnoy/QDarkStyleSheet) dark mode for spyder. Here are the [instructions from someone on StackOverflow](https://github.com/spyder-ide/spyder/issues/2350#issuecomment-436320189)
 
 I tried it by placing the correct line here: `C:\ProgramData\Anaconda2\Lib\site-packages\spyder\app`, but it sort of looks like garbage. For now I'm sticking to the white window with dark Monokai syntax highlighting.
+
+
+## Jupyter Notebooks
+
+Install Monokai theme using [jupyter-themes](https://github.com/dunovank/jupyter-themes):
+```shell
+pip install jupyterthemes # install jupyterthemes
+jt -t monokai -T   # Use monokai theme and enable the toobar (-T)
+```
+
+As seen on [this post on StackOverflow](https://stackoverflow.com/a/49444359)
