@@ -22,4 +22,16 @@ Some useful tools for data processing in python
 
 ## Nice-looking plots
 
-for making plots for IEEE conferences, thanks to this [blog post by Bastian Bloessl](https://www.bastibl.net/publication-quality-plots/).
+### Making plots for IEEE conferences
+Thanks to this [blog post by Bastian Bloessl](https://www.bastibl.net/publication-quality-plots/).
+
+### Color palettes
+The [seaborn](https://seaborn.pydata.org/tutorial/color_palettes.html) package in python lets me set nice color palettes. My color palette of choice right now is `GnBu_d`
+```python
+import seaborn as sns
+
+sns.set_palette(sns.color_palette("GnBu_d", 8))
+sns.set_style("ticks")
+sns.despine()
+```
+
