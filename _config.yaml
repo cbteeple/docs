@@ -68,6 +68,11 @@ aux_links:
 # Color scheme currently only supports "dark" or nil (default)
 color_scheme: nil
 
+# code color scheme (default, monokai)
+code_color_scheme:
+  scheme: monokai
+  override_site_theme: false
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
