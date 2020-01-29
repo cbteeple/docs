@@ -38,7 +38,7 @@ The cheapo RAMPS 1.4 board has sockes for the motor drivers, so I chose the TMC2
 2. The stock Creality LCD screen runs on 12V, but the Reprap Discount Full Graphic Screen that comes with the RAMPS 1.4 board runs on 5V. And guess what: The holes in the stock CR10s case don't quite line up with the new screen.
 
 ## Front Panel
-Since the new LCD didn't fit, I needed to make a new face plate. I decided to design one that snaps into place in the old hole where the LCD use to sit. (Part coming soon on Thingiverse)
+Since the new LCD didn't fit, I needed to make a new face plate. I decided to design one that snaps into place in the old hole where the LCD use to sit. You can find the [part on Thingiverse](https://www.thingiverse.com/thing:4132276)
 
 ## Firmware
 ### Enable UART with the TMC2208 Drivers
