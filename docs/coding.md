@@ -62,6 +62,8 @@ Failed
 
 Based on the instructions from [this Github Issue](https://github.com/spyder-ide/spyder/issues/2350#issuecomment-440693015)
 1. Put the following code into a file named `darkflat.py`, and place it in `C:\ProgramData\Anaconda2\Lib\site-packages\spyder\`
+
+{% raw %}
 ```python
 #! /usr/bin/env python
 
@@ -122,6 +124,7 @@ class QDarkPalette():
         app.setPalette(self.palette)
         self.set_stylesheet(app)
 ```
+{% endraw %}
 
 2. Add the following three lines right before the `return` statement in the `initialize` function in `app/mainwindow.py`
 ```python
