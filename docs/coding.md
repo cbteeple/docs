@@ -76,7 +76,7 @@ Failed
 
 Based on the instructions from [this Github Issue](https://github.com/spyder-ide/spyder/issues/2350#issuecomment-440693015)
 
-[<i class="fas fa-file-alt"></i> darkflat.py]({{ "assets/files/darkflat.py" | absolute_path }}){: .btn .btn-primary }
+[<i class="fas fa-file-code"></i> darkflat.py]({{ "assets/files/darkflat.py" | absolute_path }}){: .btn .btn-primary }
 
 1. Put `darkflat.py` into `C:\ProgramData\Anaconda2\Lib\site-packages\spyder\`
 	- This is a modified version of the original code.
