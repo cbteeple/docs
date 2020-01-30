@@ -39,6 +39,20 @@ A good basic setup:
 ```
 - [Sync Settings](https://packagecontrol.io/packages/Sync%20Settings) - A nice tool to sync sublime settings using github gists.
 
+
+### Windows right-click menu items
+
+[<i class="fas fa-file-alt"></i> subl.reg]({{ "assets/files/subl.reg" | absolute_path }}){: .btn .btn-primary }
+
+This registy file adds several right-click options:
+1. Open any file with Sublime
+2. Open any folder with Sublime
+	- by right-clicking on the folder
+	- by right clicking on any white space inside the folder
+
+Enjoy!
+
+
 ## Spyder
 Python IDE
 
