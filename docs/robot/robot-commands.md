@@ -22,6 +22,16 @@ font_awesome: "fas fa-terminal"
 [Hand+Arm Package Documentation](https://cbteeple.github.io/hand_arm_cbt_docs/){: .btn .btn-primary}
 [Pressure Controller Documentation](https://cbteeple.github.io/pressure_controller_docs/){: .btn}
 
+### Hardware Bringup
+```bash
+bash bringup-hw.sh anthro8
+bash bringup-planning.sh
+roslaunch hand_arm pick-place-plan-multi.launch traj:=ihm_demos/cap
+roslaunch hand_arm pick-place-run-multi.launch traj:=ihm_demos/cap reps:=1 speed_factor:=1.0
+
+```
+
+
 ### Real Robot
 #### Bring up the robot
 `roslaunch ur_modern_driver ur5e_bringup.launch limited:=true robot_ip:=192.168.1.2`
