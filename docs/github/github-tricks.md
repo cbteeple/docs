@@ -28,6 +28,8 @@ Thanks to [Jonathan Klughertz](http://www.codeblocq.com/2016/01/Untrack-files-al
 4. Commit and push
 
 ```shell
+git add.
+git commit -m "added a few things to gitignore"
 git rm -r --cached .
 git add .
 git commit -m ".gitignore fix"
