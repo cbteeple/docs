@@ -3,7 +3,7 @@ layout: default
 title: CR10s Upgrades
 permalink: /3d_printing/upgrades
 parent: 3D Printing
-nav_order: 1
+nav_order: 2
 font_awesome: "fas fa-terminal"
 ---
 
