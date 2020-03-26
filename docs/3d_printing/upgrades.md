@@ -34,7 +34,7 @@ font_awesome: "fas fa-terminal"
 Old Version
 {: .label .label-yellow }
 
-Docs about upgrade to SKR 1.4 board coming soon
+_Docs about upgrade to SKR 1.4 board coming soon_
 
 I was tired of how loud the CR10s is out of the box, so I figured I could quiet it down with some nice Trinamic motor drivers. However, Creality designed thier own board for the CR10s with built-in motor drivers (pretty much the cheapest ones available). Luckily I had an extra RAMPS 1.4 main board with an Arduino Mega 2560 laying around to use.
 
