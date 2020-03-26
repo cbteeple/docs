@@ -30,6 +30,12 @@ font_awesome: "fas fa-terminal"
 
 
 ## Motor Drivers + Main Board
+
+Old Version
+{: .label .label-yellow }
+
+Docs about upgrade to SKR 1.4 board coming soon
+
 I was tired of how lout the CR10s is out of the box, so I figured I could quiet it down with some nice Trinamic motor drivers. However, Creality designed thier own board for the CR10s with built-in motor drivers (pretty much the cheapest ones available). Luckily I had an extra RAMPS 1.4 main board with an Arduino Mega 2560 laying around to use.
 
 The cheapo RAMPS 1.4 board has sockes for the motor drivers, so I chose the TMC2208 for its simple 1-wire UART connection and drop-in replacement into the board. However, replacing the board caused a ripple effect through the rest of the hardware:
