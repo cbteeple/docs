@@ -119,7 +119,7 @@ As seen on [this post on StackOverflow](https://stackoverflow.com/a/49444359)
 
 When making python packages, I follow Scott Torborg's guide for how to package python code
 
-[Python Packaging Guidelines](https://python-packaging.readthedocs.io/en/latest/index.html){ .btn .btn-primary }
+[Python Packaging Guidelines](https://python-packaging.readthedocs.io/en/latest/index.html){: .btn .btn-primary }
 
 Tweaks I make to his style guide:
 1. I place the `tests` folder in the main folder (not in the package directory)
