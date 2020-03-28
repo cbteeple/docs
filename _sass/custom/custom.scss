@@ -68,3 +68,9 @@ $btn-primary-color: $base-color;
 	 } 
 
 }
+
+.gallery-33{
+	@include mq(sm){
+	    width: calc(33% - 2*#{$gallery-padding});
+	 }  
+}

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: CR10s Upgrades
+title: CR10s Upgrades (v2.0)
 permalink: /3d_printing/upgrades
 parent: 3D Printing
 nav_order: 2
@@ -21,36 +21,65 @@ font_awesome: "fas fa-terminal"
 
 ## Base Model - CR-10s
 
-<img alt="Bottom view of the PCB"
+<img alt="My CR-10s 3D printer"
      src="{{ "assets/img/printer_wide.jpg" | absolute_url }}"
      class="gallery gallery-4to3-tall" />
-<img alt="Bottom view of the PCB"
+<img alt="My CR-10s 3D printer"
      src="{{ "assets/img/printer_zoom.jpg" | absolute_url }}"
      class="gallery gallery-4to3-wide" />
 
 
 ## Motor Drivers + Main Board
 
-Old Version
-{: .label .label-yellow }
+<img alt="The SKR 1.4 board from BigTreeTech has a 32-bit MCU and fully configured internal routing for UART motor driver signals"
+     src="{{ "assets/img/skr1_4_board.jpg" | absolute_url }}"
+     class="gallery gallery-33"/>
+<img alt="Testing the board with my printer before fully mounting it"
+     src="{{ "assets/img/skr1_4_test.jpg" | absolute_url }}"
+     class="gallery gallery-33"/>
+<img alt="The board fits snuggly in the CR-10 case."
+     src="{{ "assets/img/skr1_4_install.jpg" | absolute_url }}"
+     class="gallery gallery-33"/>
 
-_Docs about upgrade to SKR 1.4 board coming soon_
+I was tired of how loud the CR10s is out of the box, so I figured I could quiet it down with some nice Trinamic motor drivers. However, Creality designed thier own board for the CR10s with built-in motor drivers (pretty much the cheapest ones available). After playing around with an extra RAMPS 1.4 main board with an 8-bit Arduino Mega 2560 I had laying around, I decided to spring for a new 32-bit board (the SKR 1.4).
 
-I was tired of how loud the CR10s is out of the box, so I figured I could quiet it down with some nice Trinamic motor drivers. However, Creality designed thier own board for the CR10s with built-in motor drivers (pretty much the cheapest ones available). Luckily I had an extra RAMPS 1.4 main board with an Arduino Mega 2560 laying around to use.
+For super-quiet motors, I chose the TMC2208 stepper driver package from Trinamic becasue of its simple 1-wire UART connection and native 256 microstepping capabillities. I bought the driver boards from BigTreeTech, and The SKR 1.4 board already has internal routing for UART (and SPI) to each of the motor driver sockets, so this was a breeze to set up.
 
-The cheapo RAMPS 1.4 board has sockes for the motor drivers, so I chose the TMC2208 for its simple 1-wire UART connection and drop-in replacement into the board. However, replacing the board caused a ripple effect through the rest of the hardware:
+However, replacing the board caused a new issue: the stock Creality LCD didn't work with my new board. I had an extra Reprap Discount Full Graphic Screen that came with my extra RAMPS 1.4 board, but guess what: The holes in the stock CR10s case don't quite line up with the new screen.
 
-1. The stock Creality board uses JST connectors, while the RAMPS 1.4 uses classic pin headers. Thus, I had to crimp my own connectors onto wires for all the motors, switches, thermisters, and fans. Rather than actually modify the stock cables, I ordered a replacement cable set on Amazon for the switches and motors, and made some adapters for the thermisters and fans.
-2. The stock Creality LCD screen runs on 12V, but the Reprap Discount Full Graphic Screen that comes with the RAMPS 1.4 board runs on 5V. And guess what: The holes in the stock CR10s case don't quite line up with the new screen.
 
-## Front Panel
-Since the new LCD didn't fit, I needed to make a new face plate. I decided to design one that snaps into place in the old hole where the LCD use to sit. You can find the [part on Thingiverse](https://www.thingiverse.com/thing:4132276)
+## Face Plate for RepRapDiscount LCD
+Since the new LCD didn't fit, I needed to make a new face plate. I decided to design one that snaps into place in the old cutout where the LCD use to sit. You can find the [part on Thingiverse](https://www.thingiverse.com/thing:4132276)
+
+<img alt="Custom face plate for the RepRapDiscount LCD"
+     src="{{ "assets/img/faceplate_zoom.jpg" | absolute_url }}"
+     class="gallery gallery-4to3-tall" />
+<img alt="My custom boot screen is lookin' nice!"
+     src="{{ "assets/img/teeprint.jpg" | absolute_url }}"
+     class="gallery gallery-4to3-wide" />
 
 ## Firmware
-### Enable UART with the TMC2208 Drivers
-This is trickier than I thought it would be. It turns out the motor drivers i baught were wired differently from everyone else's. After probably 3 days of troubleshooting and reading about 10 million blog posts, I finally found this [YouTube video](https://www.youtube.com/watch?v=k3Uc1F5jgVQ&t=35s) from the company I baught the drivers from (BigTreeTech). This clarified everything.
+### Enable TMC2208 Drivers on the SKR 1.4
 
-However, that wasn't the end of thr road. It turns out Marlin 1.x doesn't fully support TMC drivers. "It should be easy to swtich up to Marlin 2.0 though," I thought. Boy was I wrong. It turns out due to a compliler problem in the Windows version of the Arduino IDE, **I CAN'T COMPILE MARLIN 2.0 IN WIDNOWS**. Luckily I dual-boot my laptop, so a quick switch over to Ubuntu 18.04, and I was compiling Marlin 2.0 in no time. Literally 15 seconds.
+I followed the [instructions for the SKR 1.4 by BigTreeTech](https://github.com/bigtreetech/BIGTREETECH-SKR-V1.3/tree/master/BTT%20SKR%20V1.4) to set up Marlin on the SKR 1.4 with the TMC2208 drivers configured in UART mode. This turned out to be pretty straightforward, but rather lengthy:
+1. Install VSCode
+2. Installed the PlatformIO plugin for VSCode (this allows you to compile Marlin for 32-bit boards)
+3. Clone [Marlin 2.0](https://github.com/MarlinFirmware/Marlin/tree/2.0.x)
+4. Copy the boards and pins files for the SKR from [BigTreeTech's github repo](https://github.com/bigtreetech/BIGTREETECH-SKR-V1.3/tree/master/BTT%20SKR%20V1.4/Firmware/Marlin-bugfix-2.0.x-SKR-V1.4/Marlin/src)
+5. Set up `platformio.ini` within Marlin with `env_default = "LPC1768"`
+6. Copy the example config files for the CR-10s
+7. Modify `configuration.h`:
+    ```cpp
+    #define SERIAL_PORT -1
+    #define SERIAL_PORT_2 0
+    #define MOTHERBOARD BOARD_BIQU_SKR_V1_4 
+    ```
+8. Modify `configuration_adv.h` to set up the TMC2208 drivers
+    - Set motor currents
+    - Set the number of native microsteps to use (default=16 for CR-10s)
+    - Don't forget to modify the steps_per_unit in `configuration.h`. These numbers assume 16 microsteps in the default CR-10s config.
+9. Compile and drag the firmware to the sd card on the SKR 1.4 board
+10. Manually restart.
 
 ### Boot Screen
 After all of that nonsense getting Marlin to work, I figured I deserved a custom boot screen to commemorate all the hard work I've put into the printer so far. I followed these steps:
@@ -62,9 +91,3 @@ After all of that nonsense getting Marlin to work, I figured I deserved a custom
 4. Hack the Marlin Firmware to only show this new boot screen
     - By Default, Marlin will only has options to show Marlin's default boot screen, show a custom screen in addition to the marlin screen, or show no boot screen.
     - I obviously want to keep the boot sequence short, so I added another flag to the boot screen library that you can add in the _configuration.h_ that disables the marlin boot screen.
-
-
-<img alt="Top view of the PCB"
-     src="{{ "assets/img/teeprint.jpg" | absolute_url }}"/>
-
-
