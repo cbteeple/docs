@@ -32,7 +32,7 @@ heading_anchors: true
 
 # Footer content appears at the bottom of every page's main content
 footer_content: "&copy; 2019 by Clark Teeple"
-logo: "/assets/img/soft_hand.svg"
+logo: "/assets/img/gear_logo_dark.svg"
 
 # Google Analytics Tracking (optional)
 # e.g, UA-1234567-89
