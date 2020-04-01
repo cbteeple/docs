@@ -129,5 +129,5 @@ Tweaks I make to his style guide:
 ### Virtual Environments
 1. Install [venv](https://docs.python.org/3/library/venv.html): `sudo apt install python3-venv`
 2. Create a folder to store virtual environments (mine is in _~Documents/virtual_envs_)
-3. Create a new vertual environment: `python3 -m venv ~Documents/virtual_envs/[ENV NAME]`
-4. Activate a virtual environment in a terminal: `source Documents/virtual_envs/[ENV NAME]/bin/activate`
+3. Create a new vertual environment: `python3 -m venv ~/Documents/virtual_envs/[ENV NAME]`
+4. Activate a virtual environment in a terminal: `source ~/Documents/virtual_envs/[ENV NAME]/bin/activate`
