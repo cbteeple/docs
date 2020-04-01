@@ -117,6 +117,7 @@ As seen on [this post on StackOverflow](https://stackoverflow.com/a/49444359)
 
 ## Python Best Practices
 
+### Packages
 When making python packages, I follow Scott Torborg's guide for how to package python code
 
 [Python Packaging Guidelines](https://python-packaging.readthedocs.io/en/latest/index.html){: .btn .btn-primary }
@@ -124,3 +125,6 @@ When making python packages, I follow Scott Torborg's guide for how to package p
 Tweaks I make to his style guide:
 1. I place the `tests` folder in the main folder (not in the package directory)
 2. I don't use the `unittest.TestCase` class
+
+### Virtual Environments
+`source Documents/virtual_envs/[ENV NAME]/bin/activate`
