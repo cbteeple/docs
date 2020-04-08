@@ -126,6 +126,9 @@ Tweaks I make to his style guide:
 1. I place the `tests` folder in the main folder (not in the package directory)
 2. I don't use the `unittest.TestCase` class
 
+[Upload them to PyPI](https://realpython.com/pypi-publish-python-package/) to use them with pip!
+
+
 ### Virtual Environments
 1. Install [venv](https://docs.python.org/3/library/venv.html): `sudo apt install python3-venv`
 2. Create a folder to store virtual environments (mine is in _~Documents/virtual_envs_)
