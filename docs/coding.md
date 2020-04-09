@@ -126,7 +126,20 @@ Tweaks I make to his style guide:
 1. I place the `tests` folder in the main folder (not in the package directory)
 2. I don't use the `unittest.TestCase` class
 
-[Upload them to PyPI](https://realpython.com/pypi-publish-python-package/) to use them with pip!
+### Upload open source packages to PyPI
+Follow [this guide](https://realpython.com/pypi-publish-python-package/) to build and upload your package
+1. Build your package
+	- increment the version number
+	- Delete the `build` and `dist` folders)
+	- `python setup.py sdist bdist_wheel`
+2. Check that the package will work correctly
+	- `twine check dist/*`
+3. Test your package on the test server. You will need to make an account there too (it's completely separate)
+	- `twine upload --repository-url https://test.pypi.org/legacy/ dist/*`
+4. Upload for real
+	- `twine upload dist/*`
+5. It seems that sometimes PyPi's servers don't update the available version number right away, but according to [this GitHub issue](https://github.com/pypa/pip/issues/4888), you can force that to happen
+	- `curl -X PURGE https://pypi.python.org/simple/[YOUR PACKAGE NAME]`
 
 
 ### Virtual Environments
