@@ -28,3 +28,13 @@ font_awesome: "fas fa-terminal"
 	- Go to "User Name" >> "Preferences"
 	- Set **Default Modeling Orientation** to "**Z up**"
 	- _Note: Literally every 3D printing and CNC system sets Z-axis to be up. I don't know why CAD softwares always default to y-axis up._
+
+
+## Convert Objects to OBJ Files in Fusion 360
+Exporting an STL is easy in Fusion, but for some reason exporting an OBJ is not. This process is based on [a tutorial on YouTube](https://www.youtube.com/watch?v=K9WmsWWYnUI)
+
+1. **Create** >> **Create Base Feature** to separate the obj creation process from the modeling process
+2. **Modify** >> **Mesh** >> **BRep to Mesh**
+3. Change all your settings similar to when you expert an STL, and click "done".
+4. Right click the new mesh body >> **Save As OBJ**
+ 
