@@ -3,7 +3,7 @@ layout: default
 title: Github
 has_children: true
 permalink: github-tips
-nav_order: 6
+nav_order: 5
 font_awesome: "fab fa-github"
 ---
 
