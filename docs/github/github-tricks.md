@@ -51,3 +51,15 @@ Thanks to [this stack overflow post](https://stackoverflow.com/questions/1248570
 ## Store your login credentials
 
 [Here's how to do it.](https://help.github.com/en/github/using-git/caching-your-github-password-in-git)
+
+
+## Use forks to organize your workflow
+when multiple people are working on a project, forks make it easier to keep track of the different changes people are making.
+
+I use the [standard github fork workflow](https://gist.github.com/Chaser324/ce0505fbed06b947d962)
+
+If somthing goes wrong, here are some [lesser used commands](https://digitaldrummerj.me/git-syncing-fork-with-original-repo/)
+
+
+
+
