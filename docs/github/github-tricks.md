@@ -18,6 +18,22 @@ font_awesome: "fas fa-hat-wizard"
 ---
 
 
+## Undo `git add` before a commit
+Documentation from [freeCodeCamp](https://www.freecodecamp.org/forum/t/how-to-undo-a-git-add-with-git-reset/13237)
+
+- `git reset <file>` for each file you want to revert
+- `git reset` to unstage all changes.
+
+
+## Undo local changes to files
+Documentation from [GitLab](https://docs.gitlab.com/ee/topics/git/numerous_undo_possibilities_in_git/)
+
+- `git stash` - Discard all local changes, but save them for possible re-use later
+- `git checkout -- <file>` - Discard local changes (permanently) to a file
+- `git reset --hard` - Discard all local changes to all files permanently
+
+
+
 ## Untrack files and remove them from remote
 
 Thanks to [Jonathan Klughertz](http://www.codeblocq.com/2016/01/Untrack-files-already-added-to-git-repository-based-on-gitignore/) for the instructions!
@@ -51,6 +67,7 @@ Thanks to [this stack overflow post](https://stackoverflow.com/questions/1248570
 ## Store your login credentials
 
 [Here's how to do it.](https://help.github.com/en/github/using-git/caching-your-github-password-in-git)
+
 
 
 ## Use forks to organize your workflow
