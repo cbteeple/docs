@@ -64,6 +64,18 @@ Thanks to [this stack overflow post](https://stackoverflow.com/questions/1248570
 ```
 
 
+## Delete a branch
+Thanks to [freeCodeCamp](https://www.freecodecamp.org/news/how-to-delete-a-git-branch-both-locally-and-remotely/) for the instructions:
+``` shell
+// delete branch locally
+git branch -d <branchName>
+
+// delete branch remotely
+git push origin --delete <branchName>
+```
+
+
+
 ## Store your login credentials
 
 [Here's how to do it.](https://help.github.com/en/github/using-git/caching-your-github-password-in-git)
