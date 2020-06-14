@@ -85,10 +85,31 @@ git push origin --delete <branchName>
 ## Use forks to organize your workflow
 when multiple people are working on a project, forks make it easier to keep track of the different changes people are making.
 
+### Basics
 I use the [standard github fork workflow](https://gist.github.com/Chaser324/ce0505fbed06b947d962)
 
 If somthing goes wrong, here are some [lesser used commands](https://digitaldrummerj.me/git-syncing-fork-with-original-repo/)
 
+
+### Turning any repo into a fork
+This is from a great tutorial by [handong1587](https://handong1587.github.io/linux_study/2015/12/18/create-multi-forks.html).
+
+Recently I needed to do this for [Marlin Firmware](https://github.com/MarlinFirmware/Marlin), since I have a variety of devices I'm developing on that us different versions:
+
+```shell
+git clone https://github.com/MarlinFirmware/Marlin.git
+cd Marlin
+```
+Now create a new repo on github. Mine was **"marlin-cr10s"**
+
+
+```shell
+git remote rename origin upstream
+git remote add origin https://github.com/cbteeple/marlin-cr10s.git
+git push -u origin
+
+
+```
 
 
 
