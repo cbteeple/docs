@@ -72,7 +72,7 @@ I followed the [instructions for the SKR 1.4 by BigTreeTech](https://github.com/
     ```cpp
     #define SERIAL_PORT -1
     #define SERIAL_PORT_2 0
-    #define MOTHERBOARD BOARD_BIQU_SKR_V1_4 
+    #define MOTHERBOARD BOARD_BTT_SKR_V1_4 
     ```
 8. Modify `configuration_adv.h` to set up the TMC2208 drivers
     - Set motor currents
@@ -95,8 +95,46 @@ After all of that nonsense getting Marlin to work, I figured I deserved a custom
 
 
 ## Direct Drive Extruder
+I designed my own remix of a model on [Thingiverse]()
+
+My changes included:
+- Simplifying the support braces into one chamfer (to clear up space for the BLTouch sensor mount)
+- Correcting errors in the mounting hole positions and sizes 
 
 
 
 ## BL Touch
 I used a model by [GuillaumeRvs on Thingiverse](https://www.thingiverse.com/thing:2994381/comments).
+
+This also reqired some firmware changes as well
+
+- Modify `configuration.h`:
+    ```cpp
+    // Use BLTouch for homing the z-axis
+    #define USE_PROBE_FOR_Z_HOMING
+
+    // Define the BLTouch sensor
+    #define BLTOUCH
+
+    #define NOZZLE_TO_PROBE_OFFSET { -40, -10, 0 }      // Probe offset from the nozzle
+    #define PROBING_MARGIN 40                           // Keep the probe away from bed edges
+    #define XY_PROBE_SPEED 12000                        // Travel fast (200mm/s)
+    #define Z_PROBE_SPEED_FAST (30*60)                  // Probe fast
+    #define Z_PROBE_SPEED_SLOW (Z_PROBE_SPEED_FAST / 2) // Slow speed is half of fast speed
+
+    #define Z_CLEARANCE_DEPLOY_PROBE   15 // Z Clearance for Deploy/Stow
+    #define Z_CLEARANCE_BETWEEN_PROBES  5 // Z Clearance between probe points
+    #define Z_CLEARANCE_MULTI_PROBE     2 // Z Clearance between multiple probes
+
+    #define AUTO_BED_LEVELING_BILINEAR    // Enable biliner bed leveing
+    #define GRID_MAX_POINTS_X 5           // Use 5x5 grid of points
+    #define GRID_MAX_POINTS_Y GRID_MAX_POINTS_X
+
+    #define Z_SAFE_HOMING // Only home Z when X and X are homed
+    ```
+
+- Modify `configuration_adv.h`:
+```cpp
+    //Use "HIGH SPEED" mode for probing.
+    #define BLTOUCH_HS_MODE
+```
