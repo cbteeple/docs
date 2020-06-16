@@ -77,6 +77,8 @@ roslaunch hand_arm pick-place-run-multi.launch traj:=ihm_demos/cap reps:=1 speed
 #### Gazebo
 `roslaunch ur_e_gazebo ur5e.launch`
 
+If Gazebo nodes never get started, [sometimes gazebo needs to be killed](https://answers.gazebosim.org//question/4153/gazebo-crashes-immediately-using-roslaunch-after-installing-gazebo-ros-packages/).
+
 #### Look at RViz pose
 `rostopic echo rviz_moveit_motion_planning_display/robot_interaction_interactive_marker_topic/feedback`
 
