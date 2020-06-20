@@ -10,3 +10,7 @@ font_awesome: "fas fa-magic"
 
 # <i class="{{ page.font_awesome }}"></i> {{ page.title }}
 {: .no_toc }
+
+
+## Check me out on [Thingiverse](https://www.thingiverse.com/teepsdeluxe/designs)!
+{: .no_toc }
