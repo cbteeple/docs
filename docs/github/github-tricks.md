@@ -75,6 +75,26 @@ git push origin --delete <branchName>
 ```
 
 
+## Split a repo into two
+[Instructions from Atlassian](https://support.atlassian.com/bitbucket-cloud/docs/split-a-repository-in-two), with 
+[extra instructions also from Atlassian](https://www.atlassian.com/blog/git/tear-apart-repository-git-way).
+
+1. Make a [new repo on github](https://github.com/new) (called "_newrepo_"" in these instructions)
+2. Make a local copy of your existing repo into a folder called "newrepo":
+```shell
+git clone <EXISTING REPO URL> newrepo
+``` 
+3. Remove the origin: `git remote rm origin`
+4. Remove folders you don't want in the new repo (this might take a while):
+```shell
+git filter-branch --index-filter "git rm -r --cached --ignore-unmatch <FOLDER>" --prune-empty -f
+```
+5. Add the new repo as remote
+```shell
+git remote add origin <NEW REPO URL>
+```
+6. Push the newly pruned repo: `git push origin`
+
 
 ## Store your login credentials
 
