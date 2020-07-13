@@ -84,16 +84,23 @@ git push origin --delete <branchName>
 ```shell
 git clone <EXISTING REPO URL> newrepo
 ``` 
-3. Remove the origin: `git remote rm origin`
-4. Remove folders you don't want in the new repo (this might take a while):
+3. Remove the origin:
+```shell
+git remote rm origin
+```
+4. Remove folders you don't want in the new repo from tracking (this might take a while):
 ```shell
 git filter-branch --index-filter "git rm -r --cached --ignore-unmatch <FOLDER>" --prune-empty -f
 ```
-5. Add the new repo as remote
+5. Delete the folders you removed from tracking.
+6. Add the new repo as remote
 ```shell
 git remote add origin <NEW REPO URL>
 ```
-6. Push the newly pruned repo: `git push origin`
+7. Push the newly pruned repo
+```shell
+git push origin
+```
 
 
 ## Store your login credentials
