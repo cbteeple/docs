@@ -24,3 +24,5 @@ Here I present a variation on the [Poly Dark](https://github.com/shvchk/poly-dar
 [<i class="fas fa-file-alt"></i> Typical Screens]( {{ "assets/files/poly-dark-clark-normal.tar.gz" | absolute_url }} ){: .btn .btn-primary}
 
 [<i class="fas fa-file-alt"></i> High-Res Screens]( {{ "assets/files/poly-dark-clark-hires.tar.gz" | absolute_url }} ){: .btn .btn-primary}
+
+[<i class="fas fa-file-alt"></i> Stretched Low-Res Screens]( {{ "assets/files/poly-dark-clark-narrow.tar.gz" | absolute_url }} ){: .btn .btn-primary}
