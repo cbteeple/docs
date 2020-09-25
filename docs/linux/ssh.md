@@ -13,6 +13,8 @@ font_awesome: "fas fa-network-wired"
 ## Copy files
 From Linux to Windows (must use command line):
 
+Install [PuTTY](https://www.putty.org/). This will install the **"PSCP.exe"** program.
+
 ```bash
 PSCP.exe -r REMOTE_USER@IP_ADDRESS:/path/to/folder C:\Users\WINDOWS_USERNAME\Documents
 ```
