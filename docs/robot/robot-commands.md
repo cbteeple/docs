@@ -144,6 +144,9 @@ from the catkin workspace:
 `roslaunch usb_cam usb_cam-test.launch`
 `roslaunch apriltag_ros continuous_detection.launch`
 
+3. Calibrate the camera (luckily NVidia has the [characteristics for the Logitech C920 webcam](https://github.com/NVlabs/Deep_Object_Pose/blob/master/doc/camera_tutorial.md))
+
+
 ### Record Rosbags
 #### Start the service
 My fork of the [rosbag_recorder](https://github.com/cbteeple/rosbag-recorder) package
