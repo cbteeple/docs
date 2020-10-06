@@ -49,7 +49,7 @@ _Note: You need 3+ GB to spare on your computer._
 ```bash
 source /home/armando/Documents/armando_ws/devel/setup.bash
 ```
-3. If you want, you can always make more catkin workspaces and use the `--extend` option to connect them to the original workspace
+3. If you want, you can always make more catkin workspaces and use the `--extend` option to connect them to the original workspace [per these instructions](https://answers.ros.org/question/238679/how-to-chain-three-catkin-workspaces/)
 ```bash
 source /home/armando/Documents/apriltag_ws/devel/setup.bash --extend
 ```
