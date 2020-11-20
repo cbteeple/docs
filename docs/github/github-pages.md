@@ -20,7 +20,7 @@ font_awesome: "fas fa-address-card"
 
 We can update all our repos from remote. 
 
-[<i class="fas fa-file-alt"></i> pull_all.sh]({{ "assets/files/update_repos.sh" | absolute_url }}){: .btn .btn-primary}
+[<i class="fas fa-file-alt"></i> pull_all.sh]({{ "assets/files/pull_all.sh" | absolute_url }}){: .btn .btn-primary}
 
 
 
