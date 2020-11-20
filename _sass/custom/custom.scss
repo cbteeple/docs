@@ -1,76 +1,63 @@
-// Typography ______________________________
-//@import url(https://fonts.googleapis.com/css?family=Lato:300,400,900);
-
-//$body-font-family: "Lato", -apple-system, BlinkMacSystemFont, "helvetica neue", helvetica, roboto, noto, "segoe ui", arial, sans-serif;
-//$mono-font-family: "SFMono-Regular", Menlo, Consolas, Monospace;
-//$root-font-size: 16px;         // Base font-size for rems
-//$body-line-height: 1.4;
-//$content-line-height: 1.25;
-//$body-heading-line-height: 1.15;
-
-
-// Colors __________________________________
-$cbt-blue:   #32B0FF;
-$cbt-green:  #00b050;
-$cbt-orange: #e65c00;
-$cbt-steel:  #688094;
-$cbt-cyan:   #00b3d6;
-
-$base-color: $cbt-cyan;
-
-
-
-$link-color: $base-color;
-$btn-primary-color: $base-color;
-
-
-// Spacing _________________________________
-//$spacing-unit: 1rem; // 1rem == 16px
-
-
-
-// Borders _________________________________
-//$border: 1px solid;
-//$border-radius: 4px;
-//$border-color: $grey-lt-100;
-
-
-
-// Grid system _____________________________
-//$gutter-spacing: $sp-6;
-//$gutter-spacing-sm: $sp-4;
-//$nav-width: 264px;
-//$nav-width-md: 248px;
-//$content-width: 800px;
-//$header-height: 60px;
-//$search-results-width: 500px;
-
-
-// Media queries in pixels _________________
-//$media-queries: (
-//  xs: 320px,
-//  sm: 500px,
-//  md: $content-width,
-//  lg: $content-width + $nav-width,
-//  xl: 1400px
-//);
-
-
-.gallery-4to3-tall{
-	@include mq(sm){
-	    width: calc(36.15% - 2*#{$gallery-padding});
-	 }  
+h1, h2, h3, h4{
+    font-weight: bolder;
 }
 
-.gallery-4to3-wide{
-	@include mq(sm){
-	    width: calc(63.25% - 2*#{$gallery-padding});
-	 } 
 
+
+// Rounded Buttons
+.btn {
+    border-radius: 1em;
 }
 
-.gallery-33{
-	@include mq(sm){
-	    width: calc(33% - 2*#{$gallery-padding});
-	 }  
+
+// Rounded nav bar
+.nav-list-expander{
+    
+    &:hover{
+        background: $sidebar-hover-color;
+        background-image: none !important;
+    }
+
+    &.active{
+        color: $sidebar-color !important;
+        background: $link-color !important;
+        background-image: none !important;
+    }
+}
+
+
+.nav-list-link{
+    color: $link-color;
+
+    @include mq(md) {
+        border-radius: 5em;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+
+    &:hover{
+        background: $sidebar-hover-color;
+        background-image: none !important;
+
+    }
+    
+    
+    &.active{
+        color: $sidebar-color !important;
+        background: $link-color !important;
+        background-image: none !important;
+    }
+}
+
+
+// Bold Title
+
+.site-title-text {
+    font-weight: bold;
+    width:100%;
+
+    @include mq(md) {
+        width:200%;
+    }
+
 }
