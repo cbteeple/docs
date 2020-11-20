@@ -16,6 +16,14 @@ font_awesome: "fas fa-address-card"
 {:toc}
 
 
+## Pulling all repos at once
+
+We can update all our repos from remote. 
+
+[<i class="fas fa-file-alt"></i> pull_all.sh]({{ "assets/files/update_repos.sh" | absolute_url }}){: .btn .btn-primary}
+
+
+
 ## Updating all repos at once
 
 It's nice to automate this update step. 
