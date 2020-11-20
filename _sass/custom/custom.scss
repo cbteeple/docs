@@ -1,63 +1,27 @@
-h1, h2, h3, h4{
-    font-weight: bolder;
+
+$cbt-blue:   #32B0FF;
+$cbt-green:  #00b050;
+$cbt-orange: #e65c00;
+$cbt-steel:  #688094;
+$cbt-cyan:   #00b3d6;
+
+
+.btn-cbt-orange {
+  @include btn-color($body-background-color, $cbt-orange);
 }
 
-
-
-// Rounded Buttons
-.btn {
-    border-radius: 1em;
+.btn-cbt-green {
+  @include btn-color($body-background-color, $cbt-green);
 }
 
-
-// Rounded nav bar
-.nav-list-expander{
-    
-    &:hover{
-        background: $sidebar-hover-color;
-        background-image: none !important;
-    }
-
-    &.active{
-        color: $sidebar-color !important;
-        background: $link-color !important;
-        background-image: none !important;
-    }
+.btn-cbt-blue {
+  @include btn-color($body-background-color, $cbt-blue);
 }
 
-
-.nav-list-link{
-    color: $link-color;
-
-    @include mq(md) {
-        border-radius: 5em;
-        border-top-right-radius: 0px;
-        border-bottom-right-radius: 0px;
-    }
-
-    &:hover{
-        background: $sidebar-hover-color;
-        background-image: none !important;
-
-    }
-    
-    
-    &.active{
-        color: $sidebar-color !important;
-        background: $link-color !important;
-        background-image: none !important;
-    }
+.btn-cbt-steel {
+  @include btn-color($body-background-color, $cbt-steel);
 }
 
-
-// Bold Title
-
-.site-title-text {
-    font-weight: bold;
-    width:100%;
-
-    @include mq(md) {
-        width:200%;
-    }
-
+.btn-cbt-cyan {
+  @include btn-color($body-background-color, $cbt-cyan);
 }

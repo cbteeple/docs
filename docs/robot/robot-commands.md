@@ -19,8 +19,8 @@ font_awesome: "fas fa-terminal"
 
 ## Robot
 
-[Hand+Arm Package Documentation](https://cbteeple.github.io/hand_arm_cbt_docs/){: .btn .btn-primary}
-[Pressure Controller Documentation](https://cbteeple.github.io/pressure_controller_docs/){: .btn}
+[Hand+Arm Package Documentation](https://cbteeple.github.io/hand_arm_cbt_docs/){: .btn .btn-cbt-blue}
+[Pressure Controller Documentation](https://cbteeple.github.io/pressure_controller_docs/){: .btn .btn-cbt-orange}
 
 ### Hardware Bringup
 ```bash
