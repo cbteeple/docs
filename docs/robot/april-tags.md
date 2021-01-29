@@ -19,15 +19,18 @@ font_awesome: "fas fa-qrcode"
 ## Make a printable grid of april tags in pdf form
 I wrote a bash script to generate pdfs of april tages with a specified real-world size.
 
-[<i class="fas fa-file-alt"></i> resize-tags.sh]( {{ "assets/files/resize_tags.sh" | absolute_url }} ){: .btn .btn-primary}
+[<i class="fas fa-file-alt"></i> resize_tags.sh]( {{ "assets/files/resize_tags.sh" | absolute_url }} ){: .btn .btn-primary}
 
 
 1. Download the pre-made apriltag images from [thier repo](https://github.com/AprilRobotics/apriltag-imgs). _These images are all tiny (each square in the tag is one pixel)_
 2. Fix ImageMagick's pdf write permissions per [these instructions](https://cromwell-intl.com/open-source/pdf-not-authorized.html)
 	- `sudo gedit /etc/ImageMagick-6/policy.xml`
 	- Change PDF rights to `rights="read|write"`
-3. Download my "**_resize-tags.sh_**" file, and move it into the root folder of the apriltag-imgs repo.
-4. Open "**_resize-tags.sh_**" in a text editor and set the parameters at the top.
+3. Increase ImageMagick's memory allowance per [these instructions](https://github.com/ImageMagick/ImageMagick/issues/396#issuecomment-285036894)
+	- `sudo gedit /etc/ImageMagick-6/policy.xml`
+	- Change memory value to `value="32GB"`. This should give you enough RAM allowance for lots of high-res images. (_Even if you don't have that amount of ram, your computer should be fine._)
+4. Download my "**_resize_tags.sh_**" file, and move it into the root folder of the apriltag-imgs repo.
+5. Open "**_resize_tags.sh_**" in a text editor and set the parameters at the top.
 ```bash
 	# Set the folder to use
 	FILES=tag36h11/*.png  # Set the folder to convert from
@@ -43,21 +46,21 @@ I wrote a bash script to generate pdfs of april tages with a specified real-worl
 	grid_w=6           # [num] Number of columns
 	grid_filetype=pdf  # [png, jpg, pdf] Set the filetype for the grids
 ```
-5. Run the script from a terminal.
-	- `bash resize-tags.sh`
+6. Run the script from a terminal.
+	- `bash resize_tags.sh`
 	- A new folder (named by the tag dimension) will be generated inside the folder of whichever tag type you set to resize.
 	- Larger images of all individual tags are stored in the new folder.
 	- Printable grids are also generated according to your settings.
-6. Print grids. _**When printing the grid pdfs, be sure to turn off "auto-scaling" and "document scaling" everywhere in the print dialog to ensure all the tags come out the correct real-world size.**_
+7. Print grids. _**When printing the grid pdfs, be sure to turn off "auto-scaling" and "document scaling" everywhere in the print dialog to ensure all the tags come out the correct real-world size.**_
 
 ### PDFs for the standard "tag36h11" tags
 Since I use the "tag36h11" often, I have already generated sets of printable tags in PDF form at various standard dimensions.
 
-[<i class="fas fa-file-archive"></i> 30 mm Side Length]( {{ "assets/files/tag36h11_30mm.zip" | absolute_url }} ){: .btn .btn-primary}
+[<i class="fas fa-file-pdf"></i> 30 mm Side Length]( {{ "assets/files/tag36h11_30mm.pdf" | absolute_url }} ){: .btn .btn-primary}
 
-[<i class="fas fa-file-archive"></i> 60 mm Side Length]( {{ "assets/files/tag36h11_60mm.zip" | absolute_url }} ){: .btn .btn-primary}
+[<i class="fas fa-file-pdf"></i> 60 mm Side Length]( {{ "assets/files/tag36h11_60mm.pdf" | absolute_url }} ){: .btn .btn-primary}
 
-[<i class="fas fa-file-archive"></i> 90 mm Side Length]( {{ "assets/files/tag36h11_90mm.zip" | absolute_url }} ){: .btn .btn-primary}
+[<i class="fas fa-file-pdf"></i> 100 mm Side Length]( {{ "assets/files/tag36h11_100mm.pdf" | absolute_url }} ){: .btn .btn-primary}
 
 <img alt="The first 24 april tags with side lengths of 30mm in a nice printable grid"
      src="{{ "assets/img/apriltags_30mm.png" | absolute_url }}"/>

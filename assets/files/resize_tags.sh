@@ -13,10 +13,13 @@ dpi=300            # [ppi] Set the dpi (to control the print quality)
 extra_margin=1     # [px]  Add an extra margin around your tags
 default_width=10.0 # [px]  The pixel width of the original images
 
-# Set the grid size your want to make
+# Set the grid size you want to make
 grid_h=4           # [num] Number of rows
 grid_w=6           # [num] Number of columns
 grid_filetype=pdf  # [png, jpg, pdf] Set the filetype for the grids
+
+# Decide whether to keep intermediate files
+keep_single_tag_images=false
 
 
 
@@ -29,7 +32,7 @@ total_files=0
 
 for f in $FILES
 do
-    total_files=$((total_files+1))
+	total_files=$((total_files+1))
 done
 
 total_files_check=$((total_files-1))
@@ -51,10 +54,11 @@ echo "$scale"
 echo "$margin"
 
 
-# Make the output filepath 
+# Make a fresh output directory
 base="$(dirname -- $FILES[0])"
 OUTFOLDER="${base}/${width}mm"
 mkdir -p $OUTFOLDER
+rm -r $OUTFOLDER/*
 
 
 # Set up some variables
@@ -66,42 +70,56 @@ montage_num=0
 # Loop over all pictures
 for f in $FILES
 do
-    # Skip the mosaic picture
-    if [[ "$f" == *"mosaic"* ]]; then
-        total_files_check=$((total_files_check-1))
-        continue
-    fi
+	# Skip the mosaic picture
+	if [[ "$f" == *"mosaic"* ]]; then
+		total_files_check=$((total_files_check-1))
+		continue
+	fi
 
-    # Generate the output filename for the current image
-    ext="${f#*.}"
-    filename="$(basename -- $f)"
-    name=$(echo "$filename" | cut -f 1 -d '.')
-    outname="${OUTFOLDER}/${name}.${ext}"
-    #echo "$outname"
+	# Generate the output filename for the current image
+	ext="${f#*.}"
+	filename="$(basename -- $f)"
+	name=$(echo "$filename" | cut -f 1 -d '.')
+	outname="${OUTFOLDER}/${name}.${ext}"
+	#echo "$outname"
 
-    # Rescale the current image
-    convert $f -scale $scale% $outname
+	# Rescale the current image
+	convert $f -scale $scale% $outname
 
-    # Add the image to the list of images to add to the current grid
-    allnames="${allnames} ${outname}"
+	# Add the image to the list of images to add to the current grid
+	allnames="${allnames} ${outname}"
 
-    # Every time we need to generate a grid, do it 
-    v=$(((i+1)%grid_check))
+	# Every time we need to generate a grid, do it 
+	v=$(((i+1)%grid_check))
     if [[ ( "$v" -eq 0  &&  "$i" != 0 ) || "$i" == "$total_files_check" ]]; then
 
-        # Generate the output filename for the grid
-        outmontage="${OUTFOLDER}/grid${last_i}_${i}.${grid_filetype}"
+    	# Generate the output filename for the grid
+    	last_i_str=`printf "%05d\n" $last_i`
+    	i_str=`printf "%05d\n" $i`
+    	outmontage="${OUTFOLDER}/grid_${last_i_str}_${i_str}.${grid_filetype}"
 
-        # Generate the grid and save it as a pdf
-        montage $allnames -geometry ${pixels}x${pixels}+${margin}+${margin} -tile ${grid_w}x -density ${dpi} $outmontage
-        echo "$outmontage"
+    	# Generate the grid and save it as a pdf
+		montage $allnames -geometry ${pixels}x${pixels}+${margin}+${margin} -tile ${grid_w}x -density ${dpi} $outmontage
+		echo "$outmontage"
 
-        # Update grid counters
-        last_i=$((i+1))
-        montage_num=$((montage_num+1))
-        allnames=""
+		# Update grid counters
+		last_i=$((i+1))
+		montage_num=$((montage_num+1))
+    	allnames=""
     fi
 
     # Update single image counter
-    i=$((i+1))
+	i=$((i+1))
 done
+
+# Combine all single-page PDFs into one
+if [ "$grid_filetype" == "pdf" ]; then
+	echo "Combining PDFs"
+	sleep 1
+	convert -density ${dpi} ${OUTFOLDER}/*.pdf ${OUTFOLDER}/all_tags.pdf
+	rm -r $OUTFOLDER/grid*
+fi
+
+if [ "$keep_single_tag_images" != true ]; then
+	rm -r $OUTFOLDER/*.png
+fi
