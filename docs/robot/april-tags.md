@@ -53,11 +53,11 @@ I wrote a bash script to generate pdfs of april tages with a specified real-worl
 ### PDFs for the standard "tag36h11" tags
 Since I use the "tag36h11" often, I have already generated sets of printable tags in PDF form at various standard dimensions.
 
-[<i class="fas fa-file-alt"></i> 30 mm Side Length]( {{ "assets/files/tag36h11_30mm.zip" | absolute_url }} ){: .btn .btn-primary}
+[<i class="fas fa-file-archive"></i> 30 mm Side Length]( {{ "assets/files/tag36h11_30mm.zip" | absolute_url }} ){: .btn .btn-primary}
 
-[<i class="fas fa-file-alt"></i> 60 mm Side Length]( {{ "assets/files/tag36h11_60mm.zip" | absolute_url }} ){: .btn .btn-primary}
+[<i class="fas fa-file-archive"></i> 60 mm Side Length]( {{ "assets/files/tag36h11_60mm.zip" | absolute_url }} ){: .btn .btn-primary}
 
-[<i class="fas fa-file-alt"></i> 90 mm Side Length]( {{ "assets/files/tag36h11_90mm.zip" | absolute_url }} ){: .btn .btn-primary}
+[<i class="fas fa-file-archive"></i> 90 mm Side Length]( {{ "assets/files/tag36h11_90mm.zip" | absolute_url }} ){: .btn .btn-primary}
 
 <img alt="The first 24 april tags with side lengths of 30mm in a nice printable grid"
      src="{{ "assets/img/apriltags_30mm.png" | absolute_url }}"/>
