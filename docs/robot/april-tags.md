@@ -45,6 +45,9 @@ I wrote a bash script to generate pdfs of april tages with a specified real-worl
 	grid_h=4           # [num] Number of rows
 	grid_w=6           # [num] Number of columns
 	grid_filetype=pdf  # [png, jpg, pdf] Set the filetype for the grids
+
+	# Decide whether to keep intermediate files
+	keep_single_tag_images=false
 ```
 6. Run the script from a terminal.
 	- `bash resize_tags.sh`
@@ -54,16 +57,21 @@ I wrote a bash script to generate pdfs of april tages with a specified real-worl
 7. Print grids. _**When printing the grid pdfs, be sure to turn off "auto-scaling" and "document scaling" everywhere in the print dialog to ensure all the tags come out the correct real-world size.**_
 
 ### PDFs for the standard "tag36h11" tags
-Since I use the "tag36h11" often, I have already generated sets of printable tags in PDF form at various standard dimensions.
+Since I use the "tag36h11" often, I have already generated sets of printable tags in PDF form at various useful dimensions.
 
-[<i class="fas fa-file-pdf"></i> 30 mm Side Length]( {{ "assets/files/tag36h11_30mm.pdf" | absolute_url }} ){: .btn .btn-primary}
-
-[<i class="fas fa-file-pdf"></i> 60 mm Side Length]( {{ "assets/files/tag36h11_60mm.pdf" | absolute_url }} ){: .btn .btn-primary}
-
-[<i class="fas fa-file-pdf"></i> 100 mm Side Length]( {{ "assets/files/tag36h11_100mm.pdf" | absolute_url }} ){: .btn .btn-primary}
+[<i class="fas fa-file-pdf"></i> 30 mm Side Length]( {{ "assets/files/tag36h11_30mm.pdf" | absolute_url }} ){: .btn .btn-primary .fs-5}
+[<i class="fas fa-file-pdf"></i> 60 mm Side Length]( {{ "assets/files/tag36h11_60mm.pdf" | absolute_url }} ){: .btn .btn-primary .fs-5}
+[<i class="fas fa-file-pdf"></i> 100 mm Side Length]( {{ "assets/files/tag36h11_100mm.pdf" | absolute_url }} ){: .btn .btn-primary .fs-5}
 
 <img alt="The first 24 april tags with side lengths of 30mm in a nice printable grid"
-     src="{{ "assets/img/apriltags_30mm.png" | absolute_url }}"/>
+     src="{{ "assets/img/apriltags_30mm.png" | absolute_url }}"
+     class="gallery gallery-33"/>
+<img alt="The first 24 april tags with side lengths of 60mm in a nice printable grid"
+     src="{{ "assets/img/apriltags_60mm.png" | absolute_url }}"
+     class="gallery gallery-33"/>
+<img alt="The first 24 april tags with side lengths of 100mm in a nice printable grid"
+     src="{{ "assets/img/apriltags_100mm.png" | absolute_url }}"
+     class="gallery gallery-33"/>
 
 
 ## Setting up a test workspace
