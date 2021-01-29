@@ -17,11 +17,16 @@ font_awesome: "fas fa-qrcode"
 ---
 
 ## Make a printable grid of april tags in pdf form
-I wrote a bash script to generate pdfs of april tages with a specified real-world size.
+
+There are a few PDFs floating around (like [this one](https://www.dotproduct3d.com/uploads/8/5/1/1/85115558/apriltags1-20.pdf)) with one april tag per page. This makes sense if you are going to hang them on a wall and use them for SLAM, but what if you want to print smaller tags to use with smaller-scale applications (like object tracking during manipulation for example)?
+
+### Solution: A bash script
+I wrote a bash script to generate pdfs with grids of april tags at a specified real-world size:
+{: .fs-5 .fw-600 }
 
 [<i class="fas fa-file-alt"></i> resize_tags.sh]( {{ "assets/files/resize_tags.sh" | absolute_url }} ){: .btn .btn-primary}
 
-
+### Using the script
 1. Download the pre-made apriltag images from [thier repo](https://github.com/AprilRobotics/apriltag-imgs). _These images are all tiny (each square in the tag is one pixel)_
 2. Fix ImageMagick's pdf write permissions per [these instructions](https://cromwell-intl.com/open-source/pdf-not-authorized.html)
 	- `sudo gedit /etc/ImageMagick-6/policy.xml`
@@ -56,8 +61,8 @@ I wrote a bash script to generate pdfs of april tages with a specified real-worl
 	- Printable grids are also generated according to your settings.
 7. Print grids. _**When printing the grid pdfs, be sure to turn off "auto-scaling" and "document scaling" everywhere in the print dialog to ensure all the tags come out the correct real-world size.**_
 
-### PDFs for the standard "tag36h11" tags
-Since I use the "tag36h11" often, I have already generated sets of printable tags in PDF form at various useful dimensions.
+### Result: PDFs for the standard tags
+Since I use the "tag36h11" variant often, I have already generated sets of printable tags in PDF form at various useful dimensions.
 
 [<i class="fas fa-file-pdf"></i> 30 mm Side Length]( {{ "assets/files/tag36h11_30mm.pdf" | absolute_url }} ){: .btn .btn-primary .fs-5}
 [<i class="fas fa-file-pdf"></i> 60 mm Side Length]( {{ "assets/files/tag36h11_60mm.pdf" | absolute_url }} ){: .btn .btn-primary .fs-5}
