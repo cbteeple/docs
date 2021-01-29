@@ -18,7 +18,7 @@ font_awesome: "fas fa-qrcode"
 
 ## Make a printable grid of april tags in pdf form
 
-There are a few PDFs floating around (like [this one](https://www.dotproduct3d.com/uploads/8/5/1/1/85115558/apriltags1-20.pdf)) with one april tag per page. This makes sense if you are going to hang them on a wall and use them for SLAM, but what if you want to print smaller tags to use with smaller-scale applications (like object tracking during manipulation for example)?
+There are a few PDFs floating around (like [this one](https://github.com/AprilRobotics/apriltag-imgs/files/3680870/AprilTag-tag36h11.pdf)) with one april tag per page. This makes sense if you are going to hang them on a wall and use them for SLAM, but what if you want to print smaller tags to use with smaller-scale applications (like object tracking during manipulation for example)?
 
 ### Solution: A bash script
 I wrote a bash script to generate pdfs with grids of april tags at a specified real-world size:
