@@ -45,9 +45,11 @@ roslaunch hand_arm pick-place-run-multi.launch traj:=ihm_demos/cap reps:=1 speed
 #### Freemove/teach the robot
 - Just freemove: `rosrun hand_arm teach.py`
 
-- Teach: `rosrun hand_arm teach_points.py pick_place_test`
+- Teach points: `rosrun hand_arm teach_points.py [FILENAME]`, then use spacebar to set each point
 
-- Replay: `rosrun hand_arm replay.py pick_place_test`
+- Teach continuuous (more for debug purposes): `rosrun hand_arm teach.py [FILENAME]`
+
+- Replay: `rosrun hand_arm replay.py [FILENAME] [SPEED FACTOR]`
 
 
 
