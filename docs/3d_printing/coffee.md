@@ -10,6 +10,10 @@ font_awesome: "fas fa-mug-hot"
 # <i class="{{ page.font_awesome }}"></i> DIY Electric Burr Grinder
 {: .no_toc }
 
+{: .fs-5}
+by [TeepSmart Inc.](http://teepsmart.cbteeple.com)
+
+
 
 <img alt="JavaPresse Manual Burr Grinder"
      src="{{ "assets/img/coffee/grinder.jpg" | absolute_url }}"
@@ -19,8 +23,9 @@ font_awesome: "fas fa-mug-hot"
      class="gallery gallery-50" />
 
 {: .fs-5}
-Ditch that exhausting handle.
+Ditch that exhausting handle!
 
+High-quality electric burr grinders are expensive, but manual ones are much more affordable. I wanted to see if I could turn my manual grinder into an electric one.
 
 ### Make It!
 {: .no_toc }
@@ -33,7 +38,9 @@ Ditch that exhausting handle.
 ## How it works
 
 {: .fs-5}
-I little backpack for your manual burr grinder.
+I little backpack for your burr grinder.
+
+All I really did was connect a motor to the grinder via a timing belt and pulleys.
 
 <img alt="Electricals Assmbly"
      src="{{ "assets/img/coffee/assembly.jpg" | absolute_url }}"
@@ -52,7 +59,7 @@ Everything in this project came from Amazon.com. When buying hobby-grade things 
 
 
 | Part                           | Qty | Amazon Price  | Price for This Build | Link    |
-|:--------------------------------|:--:|:------:|:----------------:|:----------------------:|------:|
+|:--------------------------------|:--:|:------:|:----------------:|:----------------------:|
 | JavaPresse Manual Burr Grinder |   1| $39.95 | $39.95 | [Item](https://www.amazon.com/JavaPresse-Grinder-Conical-Brushed-Stainless/dp/B013R3Q7B2/ref=sr_1_5?crid=1WFYJVHRIQE8X&dchild=1&keywords=javapresse+manual+coffee+grinder&qid=1615042028&sprefix=javapresse%2Caps%2C182&sr=8-5) |
 | Timing Pulley                  |   1 |  $6.89 |               $6.89 | [Item](https://www.amazon.com/gp/product/B0747LJJ2J/ref=ppx_yo_dt_b_asin_title_o02_s00?ie=UTF8&psc=1)                                                                                                                           |
 | Timing Belt                    |   1  |  $6.58 |                $6.58 |[Item]( https://www.amazon.com/gp/product/B00CMIGFY8/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1)                                                                                                                            |
@@ -67,7 +74,15 @@ Everything in this project came from Amazon.com. When buying hobby-grade things 
 
 ## CAD for 3D Printed Parts
 
-[<i class="fas fa-cube"></i> Check Out the Fusion360 Model](https://a360.co/2PFausd){: .btn .btn-primary}
+[<i class="fas fa-cube"></i> Check out the Fusion360 model](https://a360.co/2PFausd){: .btn .btn-primary}
+
+I'd recommend printing this out of PETG or ABS. PLA gets soft at low enough temperatures that nothing will remain tight as the motor heats up (speaking from experience here).
 
 
-## Comparison to 
+## Comparison to Commercial Grinders
+
+| Name | Description                           | Price | Link    |
+|:-----|:--------------------------------------|:-----:|:--------:|
+|Baratza Encore| The "highest regarded cheaper coffee grinder" | $140 |[Amazon](https://www.amazon.com/Baratza-Encore-Conical-Coffee-Grinder/dp/B007F183LK/ref=sr_1_2?dchild=1&keywords=burr+coffee+grinder+encore&qid=1615043040&s=kitchen&sr=1-2) |
+|Capresso Infinity| Another "good brand" | $100 |[Amazon](https://www.amazon.com/Baratza-Encore-Conical-Coffee-Grinder/dp/B007F183LK/ref=sr_1_2?dchild=1&keywords=burr+coffee+grinder+encore&qid=1615043040&s=kitchen&sr=1-2) |
+|TeepSmart Electric| The "I did it for cheaper" special | $85 | |
