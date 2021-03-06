@@ -73,6 +73,11 @@ Everything in this project came from Amazon.com. When buying hobby-grade things 
 | M3 x 30mm Screws/Washers/Nuts               |   2  |  $0.00 |                $0.00 | [Assortment](https://www.amazon.com/VIGRUE-1110PCS-Stainless-Assortment-Tweezer/dp/B083SGJ7BD/ref=sr_1_6?dchild=1&keywords=m3+screw&qid=1615045917&sr=8-6) |
 |  **Totals**                    |     | **$126.08**  |  **$86.34** |   |
 
+CAUTION: Poor design choices
+{: .label .label-yellow .fs-4 }
+To get enough torque, I'm running a 12V DC motor at 24V. It heats up pretty fast, and it will probably ruin the motor a lot faster (there's a reason voltage ratings exist). In a future redesign, I'd spec a motor with a higher gear ratio so I can run it at the right voltage. That would give up speed, but be a lot safer. The Amazon link above has several varients with different gearboxes. I'd probaly go for the "_20 RPM_"
+ or "_30 RPM_" option next time (or ditch DC motors alltogether).
+
 ## CAD for 3D Printed Parts
 
 [<i class="fas fa-cube"></i> Check out the Fusion360 model](https://a360.co/2PFausd){: .btn .btn-primary}
