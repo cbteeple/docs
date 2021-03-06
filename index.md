@@ -22,7 +22,7 @@ By [Clark Teeple](http://www.cbteeple.com)
 
 
 
-This work was done as part of a research project at the [Harvard Microrobotics Lab](https://www.micro.seas.harvard.edu). Our goal was to build a system capable of smooth control of pressure to drive our custom soft robotic hands.
+This is a collection of random documentation for both personal and professional projects. I'm a PhD student at the Harvard Microrobotics Lab, where I work on soft robotic grasping, so a lot of stuff on here is related to that (useful things for myself so I don't have to remember them). I'm also a maker, and I work on a lot of personal projects, some of which are on here.
 
 
 
