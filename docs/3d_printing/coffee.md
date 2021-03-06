@@ -45,6 +45,9 @@ I little backpack for your manual burr grinder.
 
 ## Bill of Materials
 
+{: .fs-5}
+For $85, you too can have a slow, loud, low-capacity burr grinder!
+
 Everything in this project came from Amazon.com. When buying hobby-grade things on Amazon, you often have to buy things in packs of several (for example, you can't just buy one DC barrel jack, you have to buy a pack of 12). As such, the "_Amazon Price_" here is the price of purchasing the packs of several parts, and the "_Price for This Build_" is only for the correct number of compoenents, not counting the leftovers. You can always use the leftovers for another project (that's how you become a packrat like me)!
 
 
@@ -65,3 +68,6 @@ Everything in this project came from Amazon.com. When buying hobby-grade things 
 ## CAD for 3D Printed Parts
 
 [<i class="fas fa-cube"></i> Check Out the Fusion360 Model](https://a360.co/2PFausd){: .btn .btn-primary}
+
+
+## Comparison to 
