@@ -53,7 +53,7 @@ All I really did was connect a motor to the grinder via a timing belt and pulley
 ## Bill of Materials
 
 {: .fs-5}
-For $85, you too can have a slow, loud, low-capacity burr grinder!
+For $86, you too can have a slow, loud, low-capacity burr grinder!
 
 Everything in this project came from Amazon.com. When buying hobby-grade things on Amazon, you often have to buy things in packs of several (for example, you can't just buy one DC barrel jack, you have to buy a pack of 12). As such, the "_Amazon Price_" here is the price of purchasing the packs of several parts, and the "_Price for This Build_" is only for the correct number of compoenents, not counting the leftovers. You can always use the leftovers for another project (that's how you become a packrat like me)!
 
@@ -69,8 +69,9 @@ Everything in this project came from Amazon.com. When buying hobby-grade things 
 | DC Power Jack (Barrel Jack)    |   1 |  $7.99 |               $0.67 | [Pack of 12](https://www.amazon.com/ThreeBulls-Pieces-5-5mmx2-1mm-Female-Connector/dp/B01N8VV78D/ref=sr_1_3?dchild=1&keywords=dc+barrel+jack&qid=1615041413&sr=8-3)                                                                   |
 | Power Switch                   |   1  |  $5.99 |             $1.20 | [Pack of 5](https://www.amazon.com/Magic-shell-5-Pack-Rocker-Position/dp/B07D285PLL/ref=sr_1_11?dchild=1&keywords=power+switch&qid=1615041469&sr=8-11) |
 | Velcro Straps                  |   2  |  $9.55 |                $0.80 | [Pack of 24](https://www.amazon.com/gp/product/B0798L21FG/ref=ppx_yo_dt_b_search_asin_image?ie=UTF8&psc=1) |
+| Neoprene Sheet                 |  1   | $15.99 |        $1.50 | [Assortment](https://www.amazon.com/gp/product/B01IC7THJ2/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1) |
 | M3 x 30mm Screws/Washers/Nuts               |   2  |  $0.00 |                $0.00 | [Assortment](https://www.amazon.com/VIGRUE-1110PCS-Stainless-Assortment-Tweezer/dp/B083SGJ7BD/ref=sr_1_6?dchild=1&keywords=m3+screw&qid=1615045917&sr=8-6) |
-|  **Totals**                    |     | **$111.08**  |  **$84.84** |   |
+|  **Totals**                    |     | **$126.08**  |  **$86.34** |   |
 
 ## CAD for 3D Printed Parts
 
@@ -85,4 +86,4 @@ I'd recommend printing this out of PETG or ABS. PLA gets soft at low enough temp
 |:-----|:--------------------------------------|:-----:|:--------:|
 |Baratza Encore| The "highest regarded cheaper coffee grinder" | $140 |[Amazon](https://www.amazon.com/Baratza-Encore-Conical-Coffee-Grinder/dp/B007F183LK/ref=sr_1_2?dchild=1&keywords=burr+coffee+grinder+encore&qid=1615043040&s=kitchen&sr=1-2) |
 |Capresso Infinity| Another "good brand" | $100 |[Amazon](https://www.amazon.com/Baratza-Encore-Conical-Coffee-Grinder/dp/B007F183LK/ref=sr_1_2?dchild=1&keywords=burr+coffee+grinder+encore&qid=1615043040&s=kitchen&sr=1-2) |
-|TeepSmart Electric| The "I did it for cheaper" special | $85 | |
+|TeepSmart Electric| The "I did it for cheaper" special | $86 | |
