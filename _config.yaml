@@ -31,7 +31,7 @@ github_username:  cbteeple
 heading_anchors: true
 
 # Footer content appears at the bottom of every page's main content
-footer_content: "&copy; 2019 by <a target=\"_blank\"  href=\"http://cbteeple.com\">Clark Teeple</a>"
+footer_content: "&copy; 2019-2021 by <a target=\"_blank\"  href=\"http://cbteeple.com\">Clark Teeple</a>"
 logo: "/assets/img/gear_logo_dark.svg"
 
 # Google Analytics Tracking (optional)
