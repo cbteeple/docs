@@ -104,6 +104,10 @@ roslaunch ur5_e_moveit_config moveit_rviz.launch config:=true
 
 
 ## MoveIt!
+
+### Setting up custom end effectors
+[Useful setup tutorial](https://gramaziokohler.github.io/compas_fab/latest/examples/03_backends_ros/07_ros_create_urdf_ur5_with_measurement_tool.html)
+
 ### Start up the MoveIt! Server and RViz (real robot)
 ```
 roslaunch ur5_e_moveit_config ur5_e_moveit_planning_execution.launch limited:=false
