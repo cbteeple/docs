@@ -1,9 +1,9 @@
 ---
 layout: default
-title: CR10s Upgrades (v2.0)
+title: CR10s Upgrades (2021)
 permalink: /3d_printing/upgrades
 parent: 3D Printing
-nav_order: 2
+nav_order: 3
 font_awesome: "fas fa-terminal"
 ---
 
@@ -18,15 +18,6 @@ font_awesome: "fas fa-terminal"
 {:toc}
 
 ---
-
-## Base Model - CR-10s
-
-<img alt="My CR-10s 3D printer"
-     src="{{ "assets/img/printer_wide.jpg" | absolute_url }}"
-     class="gallery gallery-4to3-tall" />
-<img alt="My CR-10s 3D printer"
-     src="{{ "assets/img/printer_zoom.jpg" | absolute_url }}"
-     class="gallery gallery-4to3-wide" />
 
 
 ## Motor Drivers + Main Board

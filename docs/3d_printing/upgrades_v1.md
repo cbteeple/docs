@@ -1,9 +1,9 @@
 ---
 layout: default
-title: CR10s Upgrades (v1.0)
+title: CR10s Upgrades (2020)
 permalink: /3d_printing/upgrades_v1
 parent: 3D Printing
-nav_order: 3
+nav_order: 4
 font_awesome: "fas fa-terminal"
 ---
 
