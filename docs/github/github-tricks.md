@@ -18,6 +18,12 @@ font_awesome: "fas fa-hat-wizard"
 ---
 
 
+## Store Credentials via your browser
+
+I use [Github CLI](https://github.com/cli/cli) to do this. It's very convenient!
+
+
+
 ## Undo `git add` before a commit
 Documentation from [freeCodeCamp](https://www.freecodecamp.org/forum/t/how-to-undo-a-git-add-with-git-reset/13237)
 
