@@ -47,7 +47,7 @@ roslaunch hand_arm pick-place-run-multi.launch traj:=ihm_demos/cap reps:=1 speed
 
 - Teach points: `rosrun hand_arm teach_points.py [FILENAME]`, then use spacebar to set each point
 
-- Teach continuuous (more for debug purposes): `rosrun hand_arm teach.py [FILENAME]`
+- Teach continuous (more for debug purposes): `rosrun hand_arm teach.py [FILENAME]`
 
 - Replay: `rosrun hand_arm replay.py [FILENAME] [SPEED FACTOR]`
 
@@ -197,7 +197,7 @@ If you pickled your data after saving, you can use another set of scripts I made
 
 ### Generating URDFs from xacros
 
-For example, in the [unviersal_robots](https://github.com/ros-industrial/universal_robot) package, inside "ur_e_description", ther are several urdf xacros. To generate a plain URDF from these, just use:  
+For example, in the [unviersal_robots](https://github.com/ros-industrial/universal_robot) package, inside "ur_e_description", there are several urdf xacros. To generate a plain URDF from these, just use:  
 
 `rosrun xacro xacro --inorder -o ur5e_robot.urdf ur5e_robot.urdf.xacro`
 

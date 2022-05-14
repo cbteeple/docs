@@ -12,7 +12,7 @@ font_awesome: "fas fa-power-off"
 ## A nicer startup theme that fills some gaps
 I made a customized version of a Grub Theme for a few reasons:
 - There are very few nice-looking grub themes online.
-- Most grub themes do not accomodate high-res screens
+- Most grub themes do not accommodate high-res screens
 
 Here I present a variation on the [Poly Dark](https://github.com/shvchk/poly-dark) theme with a few tweaks:
 - Colorful icons

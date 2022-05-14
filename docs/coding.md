@@ -17,7 +17,7 @@ font_awesome: "fas fa-terminal"
 ---
 
 ## Sublime Text
-A nice text editor with good themeing and visual apeal
+A nice text editor with good theming and visual appeal
 
 A good basic setup: 
 - Theme: Preferences >> Theme >> **Adaptive**
@@ -101,7 +101,7 @@ palette.set_app(app)
 
 3. Follow [Repligon's instructions](https://github.com/spyder-ide/spyder/issues/2350#issuecomment-440693015) to make all uncolored icons white.
 
-Note: I tried this as well, but this styling didn't affect the title bar or the tabs in spyder's editor. I ultipmatiely abandoned my attempts to add a nice dark mode to Spyder 3.
+Note: I tried this as well, but this styling didn't affect the title bar or the tabs in spyder's editor. I ultimately abandoned my attempts to add a nice dark mode to Spyder 3.
 
 
 ## Jupyter Notebooks
@@ -145,5 +145,5 @@ Follow [this guide](https://realpython.com/pypi-publish-python-package/) to buil
 ### Virtual Environments
 1. Install [venv](https://docs.python.org/3/library/venv.html): `sudo apt install python3-venv`
 2. Create a folder to store virtual environments (mine is in _~Documents/virtual_envs_)
-3. Create a new vertual environment: `python3 -m venv ~/Documents/virtual_envs/[ENV NAME]`
+3. Create a new virtual environment: `python3 -m venv ~/Documents/virtual_envs/[ENV NAME]`
 4. Activate a virtual environment in a terminal: `source ~/Documents/virtual_envs/[ENV NAME]/bin/activate`

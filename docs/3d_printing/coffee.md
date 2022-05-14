@@ -42,7 +42,7 @@ I little backpack for your burr grinder.
 
 All I really did was connect a motor to the grinder via a timing belt and pulleys.
 
-<img alt="Electricals Assmbly"
+<img alt="Electrical Assembly"
      src="{{ "assets/img/coffee/assembly.jpg" | absolute_url }}"
      class="gallery gallery-50" />
 <img alt="Super simple wiring (Make the motor turn the right direction)"
@@ -55,7 +55,7 @@ All I really did was connect a motor to the grinder via a timing belt and pulley
 {: .fs-5}
 For $86, you too can have a slow, loud, low-capacity burr grinder!
 
-Everything in this project came from Amazon.com. When buying hobby-grade things on Amazon, you often have to buy things in packs of several (for example, you can't just buy one DC barrel jack, you have to buy a pack of 12). As such, the "_Amazon Price_" here is the price of purchasing the packs of several parts, and the "_Price for This Build_" is only for the correct number of compoenents, not counting the leftovers. You can always use the leftovers for another project (that's how you become a packrat like me)!
+Everything in this project came from Amazon.com. When buying hobby-grade things on Amazon, you often have to buy things in packs of several (for example, you can't just buy one DC barrel jack, you have to buy a pack of 12). As such, the "_Amazon Price_" here is the price of purchasing the packs of several parts, and the "_Price for This Build_" is only for the correct number of components, not counting the leftovers. You can always use the leftovers for another project (that's how you become a packrat like me)!
 
 
 | Part                           | Qty | Amazon Price  | Price for This Build | Link    |
@@ -75,7 +75,7 @@ Everything in this project came from Amazon.com. When buying hobby-grade things 
 
 CAUTION: Poor design choices
 {: .label .label-yellow .fs-4 }
-To get enough torque, I'm running a 12V DC motor at 24V. It heats up pretty fast, and it will probably ruin the motor a lot faster (there's a reason voltage ratings exist). In a future redesign, I'd spec a motor with a higher gear ratio so I can run it at the right voltage. That would give up speed, but be a lot safer. The Amazon link above has several varients with different gearboxes. I'd probaly go for the "_20 RPM_"
+To get enough torque, I'm running a 12V DC motor at 24V. It heats up pretty fast, and it will probably ruin the motor a lot faster (there's a reason voltage ratings exist). In a future redesign, I'd spec a motor with a higher gear ratio so I can run it at the right voltage. That would give up speed, but be a lot safer. The Amazon link above has several variants with different gearboxes. I'd probably go for the "_20 RPM_"
  or "_30 RPM_" option next time (or ditch DC motors alltogether).
 
 ## CAD for 3D Printed Parts

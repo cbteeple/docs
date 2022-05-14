@@ -121,7 +121,7 @@ when multiple people are working on a project, forks make it easier to keep trac
 ### Basics
 I use the [standard github fork workflow](https://gist.github.com/Chaser324/ce0505fbed06b947d962)
 
-If somthing goes wrong, here are some [lesser used commands](https://digitaldrummerj.me/git-syncing-fork-with-original-repo/)
+If something goes wrong, here are some [lesser used commands](https://digitaldrummerj.me/git-syncing-fork-with-original-repo/)
 
 
 ### Turning any repo into a fork

@@ -47,5 +47,5 @@ Some games won't work natively with joycons, so you have to map the buttons and 
 1. Download [**x360ce**](https://www.x360ce.com/), an emulation program that will create the correct button mapping files.
 2. Connect your JoyCons per the instructions above. Be sure to check "Combine JoyCons" when running **JoyCon-Driver**.
 3. Set up all the buttons (you can use the "record" option to speed things up). This will generate two new files in the same folder as where you put x360ce.
-5. For each game, copy all three files into the same folder as the game's excecutable (Per the installation instructions from x360ce).
+5. For each game, copy all three files into the same folder as the game's executable (Per the installation instructions from x360ce).
 6. That's it. The buttons will be mapped, and your combined JoyCons will behave like an XBOX controller!

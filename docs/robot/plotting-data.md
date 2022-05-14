@@ -40,7 +40,7 @@ Inputs:
 
 - **data_folder** - the folder where your data is stored
 - **filename** - the name of the tracked file family (_do not include the `_A.dat` part_) 
-- _pickle_ (optional) - pickle the data once calculated (varients: -p, -s, pickle, save)
+- _pickle_ (optional) - pickle the data once calculated (variants: -p, -s, pickle, save)
 
 Outputs:
 

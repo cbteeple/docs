@@ -32,9 +32,9 @@ font_awesome: "fas fa-terminal"
      src="{{ "assets/img/skr1_4_install.jpg" | absolute_url }}"
      class="gallery gallery-33"/>
 
-I was tired of how loud the CR10s is out of the box, so I figured I could quiet it down with some nice Trinamic motor drivers. However, Creality designed thier own board for the CR10s with built-in motor drivers (pretty much the cheapest ones available). After playing around with an extra RAMPS 1.4 main board with an 8-bit Arduino Mega 2560 I had laying around, I decided to spring for a new 32-bit board (the SKR 1.4).
+I was tired of how loud the CR10s is out of the box, so I figured I could quiet it down with some nice Trinamic motor drivers. However, Creality designed their own board for the CR10s with built-in motor drivers (pretty much the cheapest ones available). After playing around with an extra RAMPS 1.4 main board with an 8-bit Arduino Mega 2560 I had laying around, I decided to spring for a new 32-bit board (the SKR 1.4).
 
-For super-quiet motors, I chose the TMC2208 stepper driver package from Trinamic becasue of its simple 1-wire UART connection and native 256 microstepping capabillities. I bought the driver boards from BigTreeTech, and The SKR 1.4 board already has internal routing for UART (and SPI) to each of the motor driver sockets, so this was a breeze to set up.
+For super-quiet motors, I chose the TMC2208 stepper driver package from Trinamic because of its simple 1-wire UART connection and native 256 microstepping capabilities. I bought the driver boards from BigTreeTech, and The SKR 1.4 board already has internal routing for UART (and SPI) to each of the motor driver sockets, so this was a breeze to set up.
 
 However, replacing the board caused a new issue: the stock Creality LCD didn't work with my new board. I had an extra Reprap Discount Full Graphic Screen that came with my extra RAMPS 1.4 board, but guess what: The holes in the stock CR10s case don't quite line up with the new screen.
 
@@ -117,7 +117,7 @@ This also reqired some firmware changes as well
     #define Z_CLEARANCE_BETWEEN_PROBES  5 // Z Clearance between probe points
     #define Z_CLEARANCE_MULTI_PROBE     2 // Z Clearance between multiple probes
 
-    #define AUTO_BED_LEVELING_BILINEAR    // Enable biliner bed leveing
+    #define AUTO_BED_LEVELING_BILINEAR    // Enable bilinear bed leveling
     #define GRID_MAX_POINTS_X 5           // Use 5x5 grid of points
     #define GRID_MAX_POINTS_Y GRID_MAX_POINTS_X
 
